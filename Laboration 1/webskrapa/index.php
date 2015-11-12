@@ -1,13 +1,8 @@
 <?php
 //INCLUDE THE FILES NEEDED...
-require_once('controller/Controller.php');
-require_once('view/CompilationView.php');
-require_once('view/FormView.php');
-require_once('view/LayoutView.php');
+require_once('model/LayoutView.php');
 require_once('model/Compiler.php');
-require_once('model/Calendar.php');
-require_once('model/Cinema.php');
-require_once('model/Dinner.php');
+
 
 
 //Starts new session
@@ -17,6 +12,15 @@ require_once('model/Dinner.php');
 error_reporting(E_ALL);
 ini_set('display_errors', 'On');
 
+
+$layoutView = new \view\LayoutView();
+$layoutView->setLayout();
+
+
+
+
+
+/*
 $compile = false;
 
 //CREATE OBJECTS OF THE MODEL
@@ -26,7 +30,7 @@ $cinema = new \model\Cinema();
 $calendar = new \model\Calendar();
 
 //CREATE OBJECTS OF THE VIEWS
-$layoutView = new \view\LayoutView();
+
 $formView = new \view\FormView();
 $compView = new \view\CompilationView();
 
@@ -35,9 +39,10 @@ $controller = new \controller\Controller();
 
 //CALL CONTROLLER METHOD doCalculate IN ORDER TO DETERMINE IF USER WANTS TO CALCULATE A SKIRT PATTERN
 $compile = $controller->doCompile();
+$compileModel->fetchPage();
 
 //PICK WHICH VIEW TO DISPLAY
 $layoutView->setLayout($compile, $compView, $formView);
 
-
+*/
 
