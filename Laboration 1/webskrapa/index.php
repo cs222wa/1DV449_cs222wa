@@ -3,6 +3,7 @@
 require_once('controller/Controller.php');
 require_once('view/CompilationView.php');
 require_once('view/FormView.php');
+require_once('view/LayoutView.php');
 require_once('model/Compiler.php');
 require_once('model/Calendar.php');
 require_once('model/Cinema.php');
@@ -17,6 +18,7 @@ error_reporting(E_ALL);
 ini_set('display_errors', 'On');
 
 $compile = false;
+
 //CREATE OBJECTS OF THE MODEL
 $compileModel = new \model\Compiler();
 $dinner = new \model\Dinner();
@@ -35,7 +37,7 @@ $controller = new \controller\Controller();
 $compile = $controller->doCompile();
 
 //PICK WHICH VIEW TO DISPLAY
-$layoutView->setLayout();
+$layoutView->setLayout($compile, $compView, $formView);
 
 
 
