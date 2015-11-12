@@ -1,5 +1,5 @@
 <?php
-//LayoutView class
+//LayoutView class test
 namespace view;
 
 class LayoutView

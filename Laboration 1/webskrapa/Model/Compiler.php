@@ -1,5 +1,5 @@
 <?php
-//Compiler class
+//Compiler class test
 namespace model;
 
 class Compiler
