@@ -1,17 +1,26 @@
 <?php
-//Compiler class test
+//Compiler class
 namespace model;
+
+use model\Scraper;
 
 class Compiler
 {
-    public function fetchPage(){
-        $ch = curl_init();
+    private $url;
+    private $scraper;
+    private $startLinks;
+    private $freeDays;
 
-        curl_setopt($ch, CURLOPT_URL, "http://localhost:8080");
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-        $data = curl_exec($ch);
-        curl_close($ch);
-        return $data;
+    public function __construct($url){
+        $this->url = $url;
+        $this->scraper = new Scraper();
+        $this->startLinks = $this->scraper->getNodes($url, '//a/@href');
+        $this->freeDays = ""; //call function to scrape calendars
+        //call function to scrape dinner
+    }
 
+    //compiles the results from the different arrays
+    public function fetchResults(){
+        return "";
     }
 }

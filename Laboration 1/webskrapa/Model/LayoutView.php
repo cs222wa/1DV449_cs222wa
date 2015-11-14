@@ -1,42 +1,44 @@
 <?php
-//LayoutView class test
+//LayoutView class
 namespace view;
+
+use model\Compiler;
+use model\Scraper;
 
 class LayoutView
 {
 
 //calls function to render HTML layout
-    public function setLayout(){
+    public function setLayout()
+    {
     $this->renderFormHTML();
-}
+    }
 
     private function renderFormHTML()
     {
-        echo '<!DOCTYPE html>
-      <html>
-        <head>
-          <meta charset="utf-8">
-          <link rel="stylesheet" type="text/css" href="css/style.css">
-          <title>Movie/Dinner Planner</title>
-        </head>
-        <body>
-          <div class="container">
-            <div id="urlform">
-                ' . $this->renderForm() . '
-            </div>
-                '. $this->renderResult() .'
-          </div>
-         </body>
-      </html>
-    ';
-
+       echo '<!DOCTYPE html>
+          <html>
+            <head>
+              <meta charset="utf-8">
+              <link rel="stylesheet" type="text/css" href="css/style.css">
+              <title>Movie/Dinner Planner</title>
+            </head>
+            <body>
+              <div class="container">
+                <div id="urlform">
+                    ' . $this->renderForm() . '
+                </div>
+                    '. $this->renderResult() .'
+              </div>
+             </body>
+          </html>
+        ';
     }
-
 
     public function renderForm()
     {
         return "
-        <form id='start' action='Controller/Controller.php' method='post'accept-charset='UTF-8'>
+        <form id='start' method='post'accept-charset='UTF-8'>
             <fieldset >
                 <!--<legend></legend>-->
                 <input type='text' name='url' id='urlfield' maxlength='500' />
@@ -49,27 +51,14 @@ class LayoutView
 
     public function renderResult()
     {
-        //is set Post-url - från formulär
-
-        //skapa klass gör jämförelsedata
-
-
-        //från den klassen - skapa skrap-klass där all data hämtas ut och returneras till jämförelsedatata
-
-        //jämförelseklassen returnerar resultatet av all beräkning.
-
-    }
-
-
-/*
-    public function setLayout($compile, $compView, $formView){
-        if($compile){
-            return $compView->response();
+        if(isset($_POST['url'])){
+            $url= $_POST['url'];
+            //initiates the scraping of the different pages
+            $compiler = new Compiler($url);
+            //returns the compiled results of the scraping
+            return $compiler->fetchResults();
         }
-        return $formView->renderForm();
+        //if no adress has been added - return false;
+        return false;
     }
-
-*/
-
-
 }

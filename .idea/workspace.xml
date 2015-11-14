@@ -2,22 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8e1e09f-dc90-4722-acd9-719f45b7046b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Laboration 1/webskrapa/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/1DV449_cs222wa.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Laboration 1/webskrapa/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Laboration 1/webskrapa/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Laboration 1/webskrapa/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Laboration 1/webskrapa/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Laboration 1/webskrapa/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Laboration 1/webskrapa/.idea/webskrapa.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Laboration 1/webskrapa/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Laboration 1/webskrapa/Model/Scraper.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Laboration 1/webskrapa/Model/Compiler.php" afterPath="$PROJECT_DIR$/Laboration 1/webskrapa/Model/Compiler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Laboration 1/webskrapa/Model/LayoutView.php" afterPath="$PROJECT_DIR$/Laboration 1/webskrapa/Model/LayoutView.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Laboration 1/webskrapa/index.php" afterPath="$PROJECT_DIR$/Laboration 1/webskrapa/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="1DV449_cs222wa.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,11 +31,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Laboration 1/webskrapa/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3824522" vertical-offset="0" max-vertical-offset="918">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="408">
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -55,17 +44,18 @@
       <file leaf-file-name="LayoutView.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Laboration 1/webskrapa/Model/LayoutView.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="1377">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state vertical-scroll-proportion="-28.307692" vertical-offset="301" max-vertical-offset="1190">
+              <caret line="61" column="21" selection-start-line="61" selection-start-column="21" selection-end-line="61" selection-end-column="21" />
               <folding>
-                <marker date="1447353131519" expanded="true" signature="256:672" placeholder="..." />
-                <marker date="1447353131519" expanded="true" signature="271:437" placeholder="..." />
-                <marker date="1447353131519" expanded="true" signature="452:658" placeholder="..." />
-                <marker date="1447353131519" expanded="true" signature="486:598" placeholder="..." />
-                <marker date="1447353131519" expanded="true" signature="486:641" placeholder="..." />
-                <marker date="1447353131519" expanded="true" signature="517:580" placeholder="..." />
-                <marker date="1447353131519" expanded="true" signature="841:1153" placeholder="..." />
-                <marker date="1447353131519" expanded="true" signature="864:1137" placeholder="..." />
+                <element signature="e#42#61#0#PHP" expanded="true" />
+                <marker date="1447511203418" expanded="true" signature="303:775" placeholder="..." />
+                <marker date="1447511203418" expanded="true" signature="322:504" placeholder="..." />
+                <marker date="1447511203418" expanded="true" signature="523:757" placeholder="..." />
+                <marker date="1447511203418" expanded="true" signature="561:685" placeholder="..." />
+                <marker date="1447511203418" expanded="true" signature="561:736" placeholder="..." />
+                <marker date="1447511203418" expanded="true" signature="596:667" placeholder="..." />
+                <marker date="1447511203418" expanded="true" signature="911:1223" placeholder="..." />
+                <marker date="1447511203418" expanded="true" signature="934:1207" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -74,8 +64,18 @@
       <file leaf-file-name="Compiler.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Laboration 1/webskrapa/Model/Compiler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="391">
-              <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+            <state vertical-scroll-proportion="-15.038462" vertical-offset="0" max-vertical-offset="544">
+              <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Scraper.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Laboration 1/webskrapa/Model/Scraper.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.28683916" vertical-offset="0" max-vertical-offset="1258">
+              <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -96,6 +96,7 @@
         <option value="$PROJECT_DIR$/Laboration 1/webskrapa/index.php" />
         <option value="$PROJECT_DIR$/Laboration 1/webskrapa/Model/LayoutView.php" />
         <option value="$PROJECT_DIR$/Laboration 1/webskrapa/Model/Compiler.php" />
+        <option value="$PROJECT_DIR$/Laboration 1/webskrapa/Model/Scraper.php" />
       </list>
     </option>
   </component>
@@ -220,7 +221,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Laboration 1/webskrapa/Model" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Confirmation" />
+    <property name="options.lastSelected" value="reference.webide.settings.project.settings.php" />
     <property name="options.splitter.main.proportions" value="0.29833335" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -358,35 +359,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Laboration 1/webskrapa/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="408">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Laboration 1/webskrapa/Model/LayoutView.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="1377">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state vertical-scroll-proportion="-28.307692" vertical-offset="301" max-vertical-offset="1190">
+          <caret line="61" column="21" selection-start-line="61" selection-start-column="21" selection-end-line="61" selection-end-column="21" />
           <folding>
-            <marker date="1447353131519" expanded="true" signature="256:672" placeholder="..." />
-            <marker date="1447353131519" expanded="true" signature="271:437" placeholder="..." />
-            <marker date="1447353131519" expanded="true" signature="452:658" placeholder="..." />
-            <marker date="1447353131519" expanded="true" signature="486:598" placeholder="..." />
-            <marker date="1447353131519" expanded="true" signature="486:641" placeholder="..." />
-            <marker date="1447353131519" expanded="true" signature="517:580" placeholder="..." />
-            <marker date="1447353131519" expanded="true" signature="841:1153" placeholder="..." />
-            <marker date="1447353131519" expanded="true" signature="864:1137" placeholder="..." />
+            <element signature="e#42#61#0#PHP" expanded="true" />
+            <marker date="1447511203418" expanded="true" signature="303:775" placeholder="..." />
+            <marker date="1447511203418" expanded="true" signature="322:504" placeholder="..." />
+            <marker date="1447511203418" expanded="true" signature="523:757" placeholder="..." />
+            <marker date="1447511203418" expanded="true" signature="561:685" placeholder="..." />
+            <marker date="1447511203418" expanded="true" signature="561:736" placeholder="..." />
+            <marker date="1447511203418" expanded="true" signature="596:667" placeholder="..." />
+            <marker date="1447511203418" expanded="true" signature="911:1223" placeholder="..." />
+            <marker date="1447511203418" expanded="true" signature="934:1207" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Laboration 1/webskrapa/Model/Compiler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="391">
-          <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+        <state vertical-scroll-proportion="-15.038462" vertical-offset="0" max-vertical-offset="544">
+          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Laboration 1/webskrapa/index.php">
+    <entry file="file://$PROJECT_DIR$/Laboration 1/webskrapa/Model/Scraper.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3824522" vertical-offset="0" max-vertical-offset="918">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.28683916" vertical-offset="0" max-vertical-offset="1258">
+          <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
           <folding />
         </state>
       </provider>
