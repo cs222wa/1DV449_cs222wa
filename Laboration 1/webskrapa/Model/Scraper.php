@@ -49,7 +49,7 @@ class Scraper
     }
 
 
-    private function scrapeCalendar(){
+    public function scrapeCalendar(){
 
     }
 

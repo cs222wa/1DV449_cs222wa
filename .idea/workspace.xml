@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8e1e09f-dc90-4722-acd9-719f45b7046b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Laboration 1/webskrapa/Model/Scraper.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Laboration 1/webskrapa/Model/Compiler.php" afterPath="$PROJECT_DIR$/Laboration 1/webskrapa/Model/Compiler.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Laboration 1/webskrapa/Model/LayoutView.php" afterPath="$PROJECT_DIR$/Laboration 1/webskrapa/Model/LayoutView.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Laboration 1/webskrapa/index.php" afterPath="$PROJECT_DIR$/Laboration 1/webskrapa/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Laboration 1/webskrapa/Model/Scraper.php" afterPath="$PROJECT_DIR$/Laboration 1/webskrapa/Model/Scraper.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="1DV449_cs222wa.iws" />
@@ -61,21 +59,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Compiler.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Compiler.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Laboration 1/webskrapa/Model/Compiler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.038462" vertical-offset="0" max-vertical-offset="544">
-              <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.7075366" vertical-offset="0" max-vertical-offset="901">
+              <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Scraper.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Scraper.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Laboration 1/webskrapa/Model/Scraper.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.28683916" vertical-offset="0" max-vertical-offset="1258">
-              <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+            <state vertical-scroll-proportion="-29.615385" vertical-offset="46" max-vertical-offset="1258">
+              <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -95,8 +93,8 @@
         <option value="$PROJECT_DIR$/Laboration 1/webskrapa/View/LayoutView.php" />
         <option value="$PROJECT_DIR$/Laboration 1/webskrapa/index.php" />
         <option value="$PROJECT_DIR$/Laboration 1/webskrapa/Model/LayoutView.php" />
-        <option value="$PROJECT_DIR$/Laboration 1/webskrapa/Model/Compiler.php" />
         <option value="$PROJECT_DIR$/Laboration 1/webskrapa/Model/Scraper.php" />
+        <option value="$PROJECT_DIR$/Laboration 1/webskrapa/Model/Compiler.php" />
       </list>
     </option>
   </component>
@@ -385,18 +383,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Laboration 1/webskrapa/Model/Compiler.php">
+    <entry file="file://$PROJECT_DIR$/Laboration 1/webskrapa/Model/Scraper.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.038462" vertical-offset="0" max-vertical-offset="544">
-          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+        <state vertical-scroll-proportion="-29.615385" vertical-offset="46" max-vertical-offset="1258">
+          <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Laboration 1/webskrapa/Model/Scraper.php">
+    <entry file="file://$PROJECT_DIR$/Laboration 1/webskrapa/Model/Compiler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28683916" vertical-offset="0" max-vertical-offset="1258">
-          <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+        <state vertical-scroll-proportion="0.7075366" vertical-offset="0" max-vertical-offset="901">
+          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
           <folding />
         </state>
       </provider>
