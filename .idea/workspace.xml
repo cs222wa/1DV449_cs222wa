@@ -41,7 +41,7 @@
       <file leaf-file-name="LayoutView.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Laboration 1/webskrapa/Model/LayoutView.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-28.307692" vertical-offset="301" max-vertical-offset="1190">
+            <state vertical-scroll-proportion="-39.884617" vertical-offset="0" max-vertical-offset="1190">
               <caret line="61" column="21" selection-start-line="61" selection-start-column="21" selection-end-line="61" selection-end-column="21" />
               <folding>
                 <element signature="e#42#61#0#PHP" expanded="true" />
@@ -61,8 +61,8 @@
       <file leaf-file-name="Compiler.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Laboration 1/webskrapa/Model/Compiler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.576923" vertical-offset="80" max-vertical-offset="1751">
-              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+            <state vertical-scroll-proportion="-24.192308" vertical-offset="0" max-vertical-offset="1768">
+              <caret line="37" column="56" selection-start-line="37" selection-start-column="56" selection-end-line="37" selection-end-column="56" />
               <folding />
             </state>
           </provider>
@@ -71,8 +71,8 @@
       <file leaf-file-name="Scraper.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Laboration 1/webskrapa/Model/Scraper.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6163896" vertical-offset="1402" max-vertical-offset="2244">
-              <caret line="113" column="24" selection-start-line="113" selection-start-column="24" selection-end-line="113" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.7577197" vertical-offset="1453" max-vertical-offset="2295">
+              <caret line="123" column="0" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -366,7 +366,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Laboration 1/webskrapa/Model/LayoutView.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-28.307692" vertical-offset="301" max-vertical-offset="1190">
+        <state vertical-scroll-proportion="-39.884617" vertical-offset="0" max-vertical-offset="1190">
           <caret line="61" column="21" selection-start-line="61" selection-start-column="21" selection-end-line="61" selection-end-column="21" />
           <folding>
             <element signature="e#42#61#0#PHP" expanded="true" />
@@ -384,16 +384,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Laboration 1/webskrapa/Model/Compiler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.576923" vertical-offset="80" max-vertical-offset="1751">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        <state vertical-scroll-proportion="-24.192308" vertical-offset="0" max-vertical-offset="1768">
+          <caret line="37" column="56" selection-start-line="37" selection-start-column="56" selection-end-line="37" selection-end-column="56" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Laboration 1/webskrapa/Model/Scraper.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6163896" vertical-offset="1402" max-vertical-offset="2244">
-          <caret line="113" column="24" selection-start-line="113" selection-start-column="24" selection-end-line="113" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.7577197" vertical-offset="1453" max-vertical-offset="2295">
+          <caret line="123" column="0" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
           <folding />
         </state>
       </provider>

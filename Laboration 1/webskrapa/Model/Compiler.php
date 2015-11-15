@@ -12,6 +12,7 @@ class Compiler
     private $freeDays;
     private $cinemaDays;
     private $cinemaTitles;
+    private $movies;
 
     public function __construct($url){
         $this->url = $url;
@@ -20,8 +21,7 @@ class Compiler
         $this->freeDays = $this->getFreeDays(); //get free days for all friends as array  (freeDays[0];
         $this->cinemaDays = $this->cinemaDays(); //get the days cinema is displayed
         $this->cinemaTitles = $this->cinemaTitles(); //get the titles of the movies available.
-
-        //run json script to access availablilty and time for different titles.
+        //$this->movies = $this->getMovies($this->cinemaDays, $this->cinemaTitles);
 
         //call function to scrape dinner
     }
@@ -32,8 +32,6 @@ class Compiler
     }
 
     private function getFreeDays(){
-        //TODO: add foreach loop to find which post in the startLinks array contains the link leading to calendars?
-
         //concatinate original url with the link to the calendars
         $calendarUrl = $this->url . $this->startLinks[0] ."/";
         //scrape the new page to get links to the friends calendars.
@@ -80,18 +78,21 @@ class Compiler
     private function cinemaDays(){
         $movieUrl = $this->url . $this->startLinks[1];
         $movieDays = $this->scraper->scrapeCinemaDays($movieUrl);
-
-        //create new curl using the /cinema link.
-        //perhaps more than once?
-        //figure out how to follow scripts using curl to collect data and move forward.
         return $movieDays;
     }
 
     private function cinemaTitles(){
         $movieUrl = $this->url . $this->startLinks[1];
-        $movieTitles = $this->scraper->scrapeCinemaTitles($movieUrl);
-
-        return $movieTitles;
-
+        $movies = $this->scraper->scrapeCinemaTitles($movieUrl);
+        return $movies;
     }
+
+    public function getMovies($movieDays, $movieTitles){
+        $movieUrl = $this->url . $this->startLinks[1];
+        $movies = $this->scraper->scrapeMovies($movieUrl, $movieDays, $movieTitles);
+        return $movies;
+    }
+
+
+
 }

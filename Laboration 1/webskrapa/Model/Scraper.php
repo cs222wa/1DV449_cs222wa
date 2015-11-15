@@ -7,7 +7,6 @@ class Scraper
     public function fetchCurlPage($url)
     {
         $ch = curl_init();
-        //"http://localhost:8080"
         //specify the page to be fetched
         curl_setopt($ch, CURLOPT_URL, $url);
         //do not print the fetched page.
@@ -77,12 +76,12 @@ class Scraper
     }
 
     public function scrapeCinemaDays($cinemaUrl){
+        //fetch page
+        $page = $this->fetchCurlPage($cinemaUrl);
         //create xpath to cinema page
-        $xpath = $this->createXPath($cinemaUrl);
-
-        /*
+        $xpath = $this->createXPath($page);
         //get nodes from drop down menu
-        //$movieDays = $xpath->query('//select[@id="day"]//option[not(@disabled)]'); //HÄMTAR INTE UT NÅGONTING!!!!!
+        $movieDays = $xpath->query('//select[@id="day"]//option[not(@disabled)]');
         //create array
         $days = array();
         //foreach node fetched from cinema page...
@@ -90,32 +89,36 @@ class Scraper
             //push the node value into the $days array
             array_push($days, $movieDay->getAttribute('value'));
         }
-        //var_dump($days);
         return $days;
-*/
-        $tempDay = array("01","02","03");  //1 =Söderkåkar 2=Fabian Bom 3=Pensionat Paradiset
-        return $tempDay;
-
     }
 
     public function scrapeCinemaTitles($cinemaUrl){
+        //fetch page
+        $page = $this->fetchCurlPage($cinemaUrl);
         //create xpath to cinema page
-        $xpath = $this->createXPath($cinemaUrl);
-        /*
+        $xpath = $this->createXPath($page);
+
        //get nodes from drop down menu
-       //$movieDays = $xpath->query('//select[@name="movie"]//option[not(@disabled)]'); //HÄMTAR INTE UT NÅGONTING!!!!!
+       $movieTitles = $xpath->query('//select[@name="movie"]//option[not(@disabled)]'); //HÄMTAR INTE UT NÅGONTING!!!!!
        //create array
-       $days = array();
+       $titles = array();
        //foreach node fetched from cinema page...
-       foreach($movieDays as $movieDay){
+       foreach($movieTitles as $title){
            //push the node value into the $days array
-           array_push($days, $movieDay->getAttribute('value'));
+           array_push($titles, $title->getAttribute('value'));
        }
-       //var_dump($days);
-       return $days;
-*/
-        $tempTitles = array("01","02","03");
-        return $tempTitles;
+        //TODO: skapa multidimensionell array för att även spara ner namnen till filmerna ; 1 =Söderkåkar 2=Fabian Bom 3=Pensionat Paradiset ??
+       return $titles;
+    }
+
+    public function scrapeMovies($cinemaUrl, $dayOptions, $movieOptions)
+    {
+        //fetch page
+        $page = $this->fetchCurlPage($cinemaUrl);
+        //create xpath
+        $xpath = $this->createXPath($page);
+
+        //använda json_decode för att få url som överrenstämmer med valen av dag och film. - hur?
     }
 
 
