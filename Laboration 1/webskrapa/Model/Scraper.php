@@ -19,10 +19,10 @@ class Scraper
         return $page;
     }
 
-    public function scrapePage($page, $nodeToScrape){
+    public function scrapePage($page, $node){
 
         $xpath = $this->createXPath($page);
-        $items = $xpath->query($nodeToScrape);
+        $items = $xpath->query($node);
         //create array
         $nodeArray = [];
         foreach($items as $item)
@@ -48,7 +48,7 @@ class Scraper
     }
 
     //gets the links from assignment index page
-    public function getStartLinks($url, $node){
+    public function getLinks($url, $node){
         $page = $this->fetchCurlPage($url);
         return $this->scrapePage($page, $node);
     }
@@ -62,10 +62,12 @@ class Scraper
         $calendarData = array();
         foreach($tableItems as $tableItem)
         {
+            //if the node value of the table cell does not contain an "ok"
             if(strcasecmp($tableItem->nodeValue, "ok") == 0){
                 array_push($calendarData, true);
             }
             else{
+                //if the node value of the table cell contains an "ok"
                 array_push($calendarData, false);
             }
         }

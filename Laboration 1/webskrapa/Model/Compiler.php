@@ -14,10 +14,10 @@ class Compiler
     public function __construct($url){
         $this->url = $url;
         $this->scraper = new Scraper();
-        $this->startLinks = $this->scraper->getStartLinks($this->url, '//a/@href');  //get startlinks as array
+        $this->startLinks = $this->scraper->getLinks($this->url, '//a/@href');  //get startlinks as array
         $this->freeDays = $this->getFreeDays(); //get free days for all friends as array  (freeDays[0];
 
-        //var_dump($this->freeDays[0]);
+        var_dump($this->freeDays[0]);
         //call function to scrape dinner
     }
 
@@ -27,12 +27,12 @@ class Compiler
     }
 
     private function getFreeDays(){
-        //add foreach loop to find which post in the array contains the link leading to calendars.
+        //TODO: add foreach loop to find which post in the startLinks array contains the link leading to calendars?
 
         //concatinate original url with the link to the calendars
         $calendarUrl = $this->url . $this->startLinks[0] ."/";
         //scrape the new page to get links to the friends calendars.
-        $calendarLinks = $this->scraper->getNodes($calendarUrl, '//a/@href');
+        $calendarLinks = $this->scraper->getLinks($calendarUrl, '//a/@href');
 
         //create multidimensional array to store data from all calendars
         $calendars = array();
