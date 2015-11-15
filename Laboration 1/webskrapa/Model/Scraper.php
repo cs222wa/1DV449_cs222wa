@@ -4,12 +4,7 @@ namespace model;
 
 class Scraper
 {
-    //gets the links from index page
-    public function getNodes($url, $node){
-       return $this->fetchCurlPage($url, $node);
-    }
-
-    public function fetchCurlPage($url, $node)
+    public function fetchCurlPage($url)
     {
         $ch = curl_init();
         //"http://localhost:8080"
@@ -21,40 +16,60 @@ class Scraper
         $page = curl_exec($ch);
         //close curl
         curl_close($ch);
-        $scrapedNodes = $this->scrapePage($page, $node);
-        return $scrapedNodes;
+        return $page;
     }
 
     public function scrapePage($page, $nodeToScrape){
+
+        $xpath = $this->createXPath($page);
+        $items = $xpath->query($nodeToScrape);
+        //create array
+        $nodeArray = [];
+        foreach($items as $item)
+        {
+            //add node-values to array
+            $nodeArray[] = $item->nodeValue;
+        }
+        return $nodeArray;
+    }
+
+    private function createXPath($page){
         $dom = new \DOMDocument();
         //if HTML load is successful
         if($dom->loadHTML($page))
         {
             $xpath = new \DOMXPath($dom);
-            $items = $xpath->query($nodeToScrape);
-            //create array
-            $nodeArray = [];
-            foreach($items as $item)
-            {
-                // add node-values to array
-                $nodeArray[] = $item->nodeValue;
-            }
-            return $nodeArray;
+            return $xpath;
         }
         else
         {
             die("Fel vid inläsning av HTML");
-
         }
     }
 
-
-    public function scrapeCalendar(){
-
+    //gets the links from assignment index page
+    public function getStartLinks($url, $node){
+        $page = $this->fetchCurlPage($url);
+        return $this->scrapePage($page, $node);
     }
 
-    private function compareCalendars(){
-        //compare 3 calendars to find common days?
+    public function scrapeCalendar($calendarUrl){
+        //create an XPath for the calendar
+        $xpath = $this->createXPath($calendarUrl);
+        //scrape the nodes inside DOM table
+        $tableItems = $xpath->query("//td");
+        //create array
+        $calendarData = array();
+        foreach($tableItems as $tableItem)
+        {
+            if(strcasecmp($tableItem->nodeValue, "ok") == 0){
+                array_push($calendarData, true);
+            }
+            else{
+                array_push($calendarData, false);
+            }
+        }
+        return $calendarData;
     }
 
     private function scrapeCinema(){
