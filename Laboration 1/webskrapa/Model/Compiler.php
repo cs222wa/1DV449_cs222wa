@@ -10,14 +10,19 @@ class Compiler
     private $scraper;
     private $startLinks;
     private $freeDays;
+    private $cinemaDays;
+    private $cinemaTitles;
 
     public function __construct($url){
         $this->url = $url;
         $this->scraper = new Scraper();
         $this->startLinks = $this->scraper->getLinks($this->url, '//a/@href');  //get startlinks as array
         $this->freeDays = $this->getFreeDays(); //get free days for all friends as array  (freeDays[0];
+        $this->cinemaDays = $this->cinemaDays(); //get the days cinema is displayed
+        $this->cinemaTitles = $this->cinemaTitles(); //get the titles of the movies available.
 
-        var_dump($this->freeDays[0]);
+        //run json script to access availablilty and time for different titles.
+
         //call function to scrape dinner
     }
 
@@ -43,9 +48,7 @@ class Compiler
             $calendar = $this->scraper->scrapeCalendar($this->scraper->fetchCurlPage($calendarUrl . "/" . $link));
             //push arrays of calendar information from all individual calendars into $calendars
             array_push($calendars, $calendar);
-
         }
-
         //create array to store values for each day of the weekend
         $weekend = array(0,0,0);
         //foreach individual calendar...
@@ -72,5 +75,23 @@ class Compiler
         }
         //return array containing the weekdays all three friends are free.
         return $freeWeekendDays;
+    }
+
+    private function cinemaDays(){
+        $movieUrl = $this->url . $this->startLinks[1];
+        $movieDays = $this->scraper->scrapeCinemaDays($movieUrl);
+
+        //create new curl using the /cinema link.
+        //perhaps more than once?
+        //figure out how to follow scripts using curl to collect data and move forward.
+        return $movieDays;
+    }
+
+    private function cinemaTitles(){
+        $movieUrl = $this->url . $this->startLinks[1];
+        $movieTitles = $this->scraper->scrapeCinemaTitles($movieUrl);
+
+        return $movieTitles;
+
     }
 }
