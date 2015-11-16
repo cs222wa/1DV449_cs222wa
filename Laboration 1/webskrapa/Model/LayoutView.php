@@ -53,25 +53,22 @@ class LayoutView
 
     public function renderResult()
     {
-        if(isset($_POST['url'])){
+        if(isset($_POST['url']))
+        {
             $url= $_POST['url'];
             //initiates the scraping of the different pages
             $compiler = new Compiler($url);
             //returns the compiled results of the scraping
             $results = $compiler->fetchMovieResults();
-
-
+            //concatinate values from result array into a list html element and return to view.
+            $display = "<h2>Enligt era kalendrar har ni möjlighet att se följande filmer: </h2>";
+            $display .= "<ul class='movieList'>";
             foreach($results as $key=>$value){
-
-               return  $value['title']. " : " . $value['time']. "</br>";
-
-
-                //var_dump($key);
-                //var_dump($value['title']);
+                //make a HTML list item containing title and time of every movie available
+                $display .= "<li class='movie'>" . $value['title'] . ", som går klockan: " . $value['time']. "</li>";
             }
-
-           //return ""; //concatinate values from result array into a list html element. Use foreach loop.
-
+            $display .= "</ul>";
+            return $display;
         }
         //if no adress has been added - return false;
         return false;
