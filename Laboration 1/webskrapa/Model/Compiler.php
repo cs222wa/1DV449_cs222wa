@@ -35,10 +35,8 @@ class Compiler
         $calendarUrl = $this->url . $this->startLinks[0] ."/";
         //scrape the new page to get links to the friends calendars.
         $calendarLinks = $this->scraper->getLinks($calendarUrl, '//a/@href');
-
         //create multidimensional array to store data from all calendars
         $calendars = array();
-
         //get all calendars and push result from scraping into $calendars
         foreach($calendarLinks as $link){
             //scrape each individual calendar
@@ -58,7 +56,6 @@ class Compiler
         }
         //create array to hold the days that all friends are free on
         $freeWeekendDays = array();
-
         //if the weekday in the weekend array holds the same amount of values as there are individual calendars...
         if($weekend[0] == count($calendars)){
             //add the weekday all friends are free on to the freeWeekendDay array
@@ -73,6 +70,7 @@ class Compiler
         //return array containing the weekdays all three friends are free.
         return $freeWeekendDays;
     }
+
 
     private function cinemaDays(){
         $movieUrl = $this->url . $this->startLinks[1];

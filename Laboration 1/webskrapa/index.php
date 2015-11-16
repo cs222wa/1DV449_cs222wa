@@ -1,6 +1,6 @@
 <?php
 //INCLUDE THE FILES NEEDED...
-require_once('model/LayoutView.php');
+require_once('view/LayoutView.php');
 require_once('model/Compiler.php');
 require_once('model/Scraper.php');
 

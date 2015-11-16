@@ -111,7 +111,7 @@ class Scraper
                     $decodedMovies = json_decode($jsonMovies, true);
                     foreach($decodedMovies as $decodedMovie){
                         if($decodedMovie['status'] == 1){
-                            array_push($movieOccasions, array('time'=>$decodedMovie['time'], 'day'=>$day->getAttribute('value'), 'title'=>$movie->nodeValue));
+                            array_push($movieOccasions, array('time'=>$decodedMovie['time'], 'day'=>$day->nodeValue, 'title'=>$movie->nodeValue));
                         }
                     }
                 }

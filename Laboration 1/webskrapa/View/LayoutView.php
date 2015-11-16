@@ -65,7 +65,7 @@ class LayoutView
             $display .= "<ul class='movieList'>";
             foreach($results as $key=>$value){
                 //make a HTML list item containing title and time of every movie available
-                $display .= "<li class='movie'>" . $value['title'] . ", som går klockan: " . $value['time']. "</li>";
+                $display .= "<li class='movie'>" . $value['title'] . ", som går klockan: " . $value['time']. " på " . $value['day']. "</li>";
             }
             $display .= "</ul>";
             return $display;
