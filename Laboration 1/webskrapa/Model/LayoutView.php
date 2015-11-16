@@ -28,7 +28,9 @@ class LayoutView
                 <div id="urlform">
                     ' . $this->renderForm() . '
                 </div>
-                    '. $this->renderResult() .'
+                <div id=results>
+                        '. $this->renderResult() .'
+                </div>
               </div>
              </body>
           </html>
@@ -56,7 +58,20 @@ class LayoutView
             //initiates the scraping of the different pages
             $compiler = new Compiler($url);
             //returns the compiled results of the scraping
-            return $compiler->fetchResults();
+            $results = $compiler->fetchMovieResults();
+
+
+            foreach($results as $key=>$value){
+
+               return  $value['title']. " : " . $value['time']. "</br>";
+
+
+                //var_dump($key);
+                //var_dump($value['title']);
+            }
+
+           //return ""; //concatinate values from result array into a list html element. Use foreach loop.
+
         }
         //if no adress has been added - return false;
         return false;

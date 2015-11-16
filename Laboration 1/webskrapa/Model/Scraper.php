@@ -4,6 +4,7 @@ namespace model;
 
 class Scraper
 {
+
     public function fetchCurlPage($url)
     {
         $ch = curl_init();
@@ -82,43 +83,41 @@ class Scraper
         $xpath = $this->createXPath($page);
         //get nodes from drop down menu
         $movieDays = $xpath->query('//select[@id="day"]//option[not(@disabled)]');
-        //create array
-        $days = array();
-        //foreach node fetched from cinema page...
-        foreach($movieDays as $movieDay){
-            //push the node value into the $days array
-            array_push($days, $movieDay->getAttribute('value'));
-        }
-        return $days;
+        return $movieDays;
     }
 
-    public function scrapeCinemaTitles($cinemaUrl){
+    public function scrapeCinemaSelections($cinemaUrl){
         //fetch page
         $page = $this->fetchCurlPage($cinemaUrl);
         //create xpath to cinema page
         $xpath = $this->createXPath($page);
-
        //get nodes from drop down menu
-       $movieTitles = $xpath->query('//select[@name="movie"]//option[not(@disabled)]'); //HÄMTAR INTE UT NÅGONTING!!!!!
-       //create array
-       $titles = array();
-       //foreach node fetched from cinema page...
-       foreach($movieTitles as $title){
-           //push the node value into the $days array
-           array_push($titles, $title->getAttribute('value'));
-       }
-        //TODO: skapa multidimensionell array för att även spara ner namnen till filmerna ; 1 =Söderkåkar 2=Fabian Bom 3=Pensionat Paradiset ??
-       return $titles;
+        $selections = $xpath->query('//select[@name="movie"]//option[not(@disabled)]');
+        return $selections;
     }
 
-    public function scrapeMovies($cinemaUrl, $dayOptions, $movieOptions)
-    {
-        //fetch page
-        $page = $this->fetchCurlPage($cinemaUrl);
-        //create xpath
-        $xpath = $this->createXPath($page);
-
-        //använda json_decode för att få url som överrenstämmer med valen av dag och film. - hur?
+    public function getMovies($cinemaUrl, $freeDays, $optionalDays, $movieOptions) {
+        //create array
+        $movieOccasions = array();
+        //foreach day that the friends can choose from...
+        foreach ($optionalDays as $day) {
+            //...if a value in the array of optional days is the same as the node value of the day/days the friends are available...
+            if (in_array($day->nodeValue, $freeDays)) {
+                // then circle through all the different movie options for that day
+                foreach ($movieOptions as $movie) {
+                    // make a json request of the different values of days and movies
+                    $jsonMovies = $this->fetchCurlPage($cinemaUrl . "/check?day=" . $day->getAttribute('value') .
+                        "&movie=" . $movie->getAttribute('value'));
+                    $decodedMovies = json_decode($jsonMovies, true);
+                    foreach($decodedMovies as $decodedMovie){
+                        if($decodedMovie['status'] == 1){
+                            array_push($movieOccasions, array('time'=>$decodedMovie['time'], 'day'=>$day->getAttribute('value'), 'title'=>$movie->nodeValue));
+                        }
+                    }
+                }
+            }
+        }
+        return $movieOccasions;
     }
 
 

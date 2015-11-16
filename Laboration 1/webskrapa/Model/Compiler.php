@@ -11,7 +11,7 @@ class Compiler
     private $startLinks;
     private $freeDays;
     private $cinemaDays;
-    private $cinemaTitles;
+    private $decodedMovies;
     private $movies;
 
     public function __construct($url){
@@ -20,15 +20,14 @@ class Compiler
         $this->startLinks = $this->scraper->getLinks($this->url, '//a/@href');  //get startlinks as array
         $this->freeDays = $this->getFreeDays(); //get free days for all friends as array  (freeDays[0];
         $this->cinemaDays = $this->cinemaDays(); //get the days cinema is displayed
-        $this->cinemaTitles = $this->cinemaTitles(); //get the titles of the movies available.
-        //$this->movies = $this->getMovies($this->cinemaDays, $this->cinemaTitles);
-
-        //call function to scrape dinner
+        $this->cinemaSelections = $this->cinemaSelections(); //get the titles of the movies available.
+        $this->movies = $this->getMovies();
+        //call function to scrape /dinner
     }
 
     //compiles the results from the different arrays
-    public function fetchResults(){
-        return "";
+    public function fetchMovieResults(){
+        return $this->movies;
     }
 
     private function getFreeDays(){
@@ -81,18 +80,16 @@ class Compiler
         return $movieDays;
     }
 
-    private function cinemaTitles(){
+    private function cinemaSelections(){
         $movieUrl = $this->url . $this->startLinks[1];
-        $movies = $this->scraper->scrapeCinemaTitles($movieUrl);
-        return $movies;
+        $movieselections = $this->scraper->scrapeCinemaSelections($movieUrl);
+        return $movieselections;
     }
 
-    public function getMovies($movieDays, $movieTitles){
+    public function getMovies(){
         $movieUrl = $this->url . $this->startLinks[1];
-        $movies = $this->scraper->scrapeMovies($movieUrl, $movieDays, $movieTitles);
+        $movies = $this->scraper->getMovies($movieUrl, $this->freeDays,  $this->cinemaDays, $this->cinemaSelections);
         return $movies;
     }
-
-
 
 }
