@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8e1e09f-dc90-4722-acd9-719f45b7046b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Laboration 1/webskrapa/Model/Compiler.php" afterPath="$PROJECT_DIR$/Laboration 1/webskrapa/Model/Compiler.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Laboration 1/webskrapa/View/LayoutView.php" afterPath="$PROJECT_DIR$/Laboration 1/webskrapa/View/LayoutView.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Laboration 1/webskrapa/Model/Scraper.php" afterPath="$PROJECT_DIR$/Laboration 1/webskrapa/Model/Scraper.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Laboration 1/webskrapa/index.php" afterPath="$PROJECT_DIR$/Laboration 1/webskrapa/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Laboration 1/webskrapa/css/style.css" afterPath="$PROJECT_DIR$/Laboration 1/webskrapa/css/style.css" />
     </list>
     <ignored path="1DV449_cs222wa.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,23 +41,26 @@
       <file leaf-file-name="LayoutView.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Laboration 1/webskrapa/View/LayoutView.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.6" vertical-offset="1100" max-vertical-offset="1955">
-              <caret line="88" column="27" selection-start-line="88" selection-start-column="24" selection-end-line="88" selection-end-column="27" />
+            <state vertical-scroll-proportion="-10.283334" vertical-offset="1168" max-vertical-offset="2023">
+              <caret line="105" column="50" selection-start-line="105" selection-start-column="44" selection-end-line="105" selection-end-column="50" />
               <folding>
                 <element signature="e#42#61#0#PHP" expanded="true" />
-                <marker date="1447789481602" expanded="true" signature="303:835" placeholder="..." />
-                <marker date="1447789481602" expanded="true" signature="322:504" placeholder="..." />
-                <marker date="1447789481602" expanded="true" signature="523:817" placeholder="..." />
-                <marker date="1447789481602" expanded="true" signature="561:753" placeholder="..." />
-                <marker date="1447789481602" expanded="true" signature="561:796" placeholder="..." />
-                <marker date="1447789481602" expanded="true" signature="596:667" placeholder="..." />
-                <marker date="1447789481602" expanded="true" signature="596:689" placeholder="..." />
-                <marker date="1447789481602" expanded="true" signature="700:753" placeholder="..." />
-                <marker date="1447789481602" expanded="true" signature="700:775" placeholder="..." />
-                <marker date="1447789481602" expanded="true" signature="701:753" placeholder="..." />
-                <marker date="1447789481602" expanded="true" signature="971:1283" placeholder="..." />
-                <marker date="1447789481602" expanded="true" signature="994:1065" placeholder="..." />
-                <marker date="1447789481602" expanded="true" signature="994:1267" placeholder="..." />
+                <marker date="1447797743753" expanded="true" signature="303:1116" placeholder="..." />
+                <marker date="1447797743753" expanded="true" signature="322:508" placeholder="..." />
+                <marker date="1447797743753" expanded="true" signature="527:1098" placeholder="..." />
+                <marker date="1447797743753" expanded="true" signature="565:670" placeholder="..." />
+                <marker date="1447797743753" expanded="true" signature="565:702" placeholder="..." />
+                <marker date="1447797743753" expanded="true" signature="565:1034" placeholder="..." />
+                <marker date="1447797743753" expanded="true" signature="565:1077" placeholder="..." />
+                <marker date="1447797743753" expanded="true" signature="877:948" placeholder="..." />
+                <marker date="1447797743753" expanded="true" signature="877:970" placeholder="..." />
+                <marker date="1447797743753" expanded="true" signature="981:1034" placeholder="..." />
+                <marker date="1447797743753" expanded="true" signature="981:1056" placeholder="..." />
+                <marker date="1447797743753" expanded="true" signature="982:1034" placeholder="..." />
+                <marker date="1447797743753" expanded="true" signature="1254:1543" placeholder="..." />
+                <marker date="1447797743753" expanded="true" signature="1277:1306" placeholder="..." />
+                <marker date="1447797743753" expanded="true" signature="1277:1365" placeholder="..." />
+                <marker date="1447797743753" expanded="true" signature="1277:1527" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -68,18 +69,28 @@
       <file leaf-file-name="Compiler.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Laboration 1/webskrapa/Model/Compiler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.75" vertical-offset="21" max-vertical-offset="2312">
-              <caret line="18" column="28" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="28" />
+            <state vertical-scroll-proportion="-11.416667" vertical-offset="1457" max-vertical-offset="2312">
+              <caret line="126" column="99" selection-start-line="126" selection-start-column="99" selection-end-line="126" selection-end-column="99" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Scraper.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Scraper.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Laboration 1/webskrapa/Model/Scraper.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.41754386" vertical-offset="0" max-vertical-offset="2431">
-              <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+            <state vertical-scroll-proportion="-6.6" vertical-offset="1423" max-vertical-offset="2431">
+              <caret line="107" column="37" selection-start-line="107" selection-start-column="37" selection-end-line="107" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Laboration 1/webskrapa/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.55737704" vertical-offset="340" max-vertical-offset="2295">
+              <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -93,16 +104,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Laboration 1/webskrapa/css/style.css" />
         <option value="$PROJECT_DIR$/Laboration 1/webskrapa/View/CompilationView.php" />
         <option value="$PROJECT_DIR$/Laboration 1/webskrapa/Controller/Controller.php" />
         <option value="$PROJECT_DIR$/Laboration 1/webskrapa/Model/LayoutView.php" />
         <option value="$PROJECT_DIR$/Laboration 1/webskrapa/dinner.php" />
         <option value="$PROJECT_DIR$/Laboration 1/webskrapa/View/DinnerView.php" />
         <option value="$PROJECT_DIR$/Laboration 1/webskrapa/Model/Compiler.php" />
-        <option value="$PROJECT_DIR$/Laboration 1/webskrapa/View/LayoutView.php" />
         <option value="$PROJECT_DIR$/Laboration 1/webskrapa/index.php" />
         <option value="$PROJECT_DIR$/Laboration 1/webskrapa/Model/Scraper.php" />
+        <option value="$PROJECT_DIR$/Laboration 1/webskrapa/View/LayoutView.php" />
+        <option value="$PROJECT_DIR$/Laboration 1/webskrapa/css/style.css" />
       </list>
     </option>
   </component>
@@ -395,19 +406,22 @@
           <caret line="90" column="38" selection-start-line="90" selection-start-column="38" selection-end-line="90" selection-end-column="38" />
           <folding>
             <element signature="e#42#61#0#PHP" expanded="true" />
-            <marker date="1447789481602" expanded="true" signature="303:835" placeholder="..." />
-            <marker date="1447789481602" expanded="true" signature="322:504" placeholder="..." />
-            <marker date="1447789481602" expanded="true" signature="523:817" placeholder="..." />
-            <marker date="1447789481602" expanded="true" signature="561:753" placeholder="..." />
-            <marker date="1447789481602" expanded="true" signature="561:796" placeholder="..." />
-            <marker date="1447789481602" expanded="true" signature="596:667" placeholder="..." />
-            <marker date="1447789481602" expanded="true" signature="596:689" placeholder="..." />
-            <marker date="1447789481602" expanded="true" signature="700:753" placeholder="..." />
-            <marker date="1447789481602" expanded="true" signature="700:775" placeholder="..." />
-            <marker date="1447789481602" expanded="true" signature="701:753" placeholder="..." />
-            <marker date="1447789481602" expanded="true" signature="971:1283" placeholder="..." />
-            <marker date="1447789481602" expanded="true" signature="994:1065" placeholder="..." />
-            <marker date="1447789481602" expanded="true" signature="994:1267" placeholder="..." />
+            <marker date="1447797743753" expanded="true" signature="303:1116" placeholder="..." />
+            <marker date="1447797743753" expanded="true" signature="322:508" placeholder="..." />
+            <marker date="1447797743753" expanded="true" signature="527:1098" placeholder="..." />
+            <marker date="1447797743753" expanded="true" signature="565:670" placeholder="..." />
+            <marker date="1447797743753" expanded="true" signature="565:702" placeholder="..." />
+            <marker date="1447797743753" expanded="true" signature="565:1034" placeholder="..." />
+            <marker date="1447797743753" expanded="true" signature="565:1077" placeholder="..." />
+            <marker date="1447797743753" expanded="true" signature="877:948" placeholder="..." />
+            <marker date="1447797743753" expanded="true" signature="877:970" placeholder="..." />
+            <marker date="1447797743753" expanded="true" signature="981:1034" placeholder="..." />
+            <marker date="1447797743753" expanded="true" signature="981:1056" placeholder="..." />
+            <marker date="1447797743753" expanded="true" signature="982:1034" placeholder="..." />
+            <marker date="1447797743753" expanded="true" signature="1254:1543" placeholder="..." />
+            <marker date="1447797743753" expanded="true" signature="1277:1306" placeholder="..." />
+            <marker date="1447797743753" expanded="true" signature="1277:1365" placeholder="..." />
+            <marker date="1447797743753" expanded="true" signature="1277:1527" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -428,14 +442,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Laboration 1/webskrapa/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="915">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../1dv608-Project/CircleSkirtCalculator/view/LayoutView.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5928009" vertical-offset="0" max-vertical-offset="889">
@@ -451,41 +457,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Laboration 1/webskrapa/View/LayoutView.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.6" vertical-offset="1100" max-vertical-offset="1955">
-          <caret line="88" column="27" selection-start-line="88" selection-start-column="24" selection-end-line="88" selection-end-column="27" />
-          <folding>
-            <element signature="e#42#61#0#PHP" expanded="true" />
-            <marker date="1447789481602" expanded="true" signature="303:835" placeholder="..." />
-            <marker date="1447789481602" expanded="true" signature="322:504" placeholder="..." />
-            <marker date="1447789481602" expanded="true" signature="523:817" placeholder="..." />
-            <marker date="1447789481602" expanded="true" signature="561:753" placeholder="..." />
-            <marker date="1447789481602" expanded="true" signature="561:796" placeholder="..." />
-            <marker date="1447789481602" expanded="true" signature="596:667" placeholder="..." />
-            <marker date="1447789481602" expanded="true" signature="596:689" placeholder="..." />
-            <marker date="1447789481602" expanded="true" signature="700:753" placeholder="..." />
-            <marker date="1447789481602" expanded="true" signature="700:775" placeholder="..." />
-            <marker date="1447789481602" expanded="true" signature="701:753" placeholder="..." />
-            <marker date="1447789481602" expanded="true" signature="971:1283" placeholder="..." />
-            <marker date="1447789481602" expanded="true" signature="994:1065" placeholder="..." />
-            <marker date="1447789481602" expanded="true" signature="994:1267" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Laboration 1/webskrapa/Model/Compiler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.75" vertical-offset="21" max-vertical-offset="2312">
-          <caret line="18" column="28" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="28" />
+        <state vertical-scroll-proportion="-11.416667" vertical-offset="1457" max-vertical-offset="2312">
+          <caret line="126" column="99" selection-start-line="126" selection-start-column="99" selection-end-line="126" selection-end-column="99" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Laboration 1/webskrapa/Model/Scraper.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41754386" vertical-offset="0" max-vertical-offset="2431">
-          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+        <state vertical-scroll-proportion="-6.6" vertical-offset="1423" max-vertical-offset="2431">
+          <caret line="107" column="37" selection-start-line="107" selection-start-column="37" selection-end-line="107" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Laboration 1/webskrapa/View/LayoutView.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.283334" vertical-offset="1168" max-vertical-offset="2023">
+          <caret line="105" column="50" selection-start-line="105" selection-start-column="44" selection-end-line="105" selection-end-column="50" />
+          <folding>
+            <element signature="e#42#61#0#PHP" expanded="true" />
+            <marker date="1447797743753" expanded="true" signature="303:1116" placeholder="..." />
+            <marker date="1447797743753" expanded="true" signature="322:508" placeholder="..." />
+            <marker date="1447797743753" expanded="true" signature="527:1098" placeholder="..." />
+            <marker date="1447797743753" expanded="true" signature="565:670" placeholder="..." />
+            <marker date="1447797743753" expanded="true" signature="565:702" placeholder="..." />
+            <marker date="1447797743753" expanded="true" signature="565:1034" placeholder="..." />
+            <marker date="1447797743753" expanded="true" signature="565:1077" placeholder="..." />
+            <marker date="1447797743753" expanded="true" signature="877:948" placeholder="..." />
+            <marker date="1447797743753" expanded="true" signature="877:970" placeholder="..." />
+            <marker date="1447797743753" expanded="true" signature="981:1034" placeholder="..." />
+            <marker date="1447797743753" expanded="true" signature="981:1056" placeholder="..." />
+            <marker date="1447797743753" expanded="true" signature="982:1034" placeholder="..." />
+            <marker date="1447797743753" expanded="true" signature="1254:1543" placeholder="..." />
+            <marker date="1447797743753" expanded="true" signature="1277:1306" placeholder="..." />
+            <marker date="1447797743753" expanded="true" signature="1277:1365" placeholder="..." />
+            <marker date="1447797743753" expanded="true" signature="1277:1527" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Laboration 1/webskrapa/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.55737704" vertical-offset="340" max-vertical-offset="2295">
+          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
           <folding />
         </state>
       </provider>

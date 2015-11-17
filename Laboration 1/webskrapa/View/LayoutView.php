@@ -21,11 +21,16 @@ class LayoutView
             <head>
               <meta charset="utf-8">
               <link rel="stylesheet" type="text/css" href="css/style.css">
-              <title>Movie/Dinner Planner</title>
+              <title>Middag-och Bio Planerare</title>
             </head>
             <body>
               <div class="container">
-                <div id="urlform">
+              <h1>Middag-och Bio Planerare</h1>
+              <div id="instructions">
+              <p>Välkommen till Peter, Paul & Marys Middag-och Bio Planerare!</p>
+              <p>Skriv in er webb-adress i formuläret nedan för att börja planera. </p>
+              </div>
+                <div id="formdiv">
                     ' . $this->renderForm() . '
                 </div>
                 <div id=results>
@@ -40,12 +45,11 @@ class LayoutView
     public function renderForm()
     {
         return "
-        <form id='start' method='post'accept-charset='UTF-8'>
+        <form id='urlform' method='post'accept-charset='UTF-8'>
             <fieldset >
-                <!--<legend></legend>-->
+                <label for='urlfield' >StartURL: </label>
                 <input type='text' name='url' id='urlfield' maxlength='500' />
-                <label for='urlfield' >Enter Url: </label>
-                <input type='submit' name='Submit' value='Submit' />
+                <input type='submit' id ='submitbutton' name='Submit' value='Submit' />
             </fieldset>
         </form>
         ";
@@ -61,15 +65,15 @@ class LayoutView
             //returns the compiled results of the scraping
             $results = $compiler->fetchMovieResults();
             //concatinate values from result array into a list html element and return to view.
-            $display = "<h2>Tillgängliga filmer: </h2>";
+            $display = "<h2>Tillgängliga filmer</h2>";
             $display .= "<ul class='movieList'>";
             if(count($results) == 0){
-                $display .= "<p class='error'>Tyvärr, det fanns inga passande filmer :(</p>";
+                $display .= "<div class='error'><p>Tyvärr, det fanns inga passande filmer.</p><p>:(</p></div>";
             }
             else{
                 foreach($results as $key=>$value){
                     //make a HTML list item containing title and time of every movie available with a selection link
-                    $display .= "<li class='movie'>" . $value['title'] . ", som går klockan: " . $value['time']. " på " . $value['day'].
+                    $display .= "<li class='movie'><h3>" . $value['title'] . "</h3>" . $value['time']. ", " . $value['day'].
                         "<a href=" . '?day='. $value['day'] . '&time='. $value['time'] . '&url='. $url . "> Välj film</a></li>";
                 }
             }
@@ -91,11 +95,11 @@ class LayoutView
             //fetch results of dinner scraping
             $dinnerResults = $compiler->fetchDinnerResults($_GET['day'], $_GET['time']);
             //concatinate values from result array into a list html element and return to view.
-            $display = "<h2>Tillgängliga bokningar: </h2>";
+            $display = "<h2>Tillgängliga bokningar </h2>";
             $display .= "<ul class='dinnerList'>";
 
             if(count($dinnerResults) == 0){
-                $display .= "<p class='error'>Tyvärr, det fanns inga lediga bord att boka :(</p>";
+                $display .= "<div class='error'><p>Tyvärr, det fanns inga lediga bord att boka.</p><p>:(</p></div>";
             }
         else{
                 foreach($dinnerResults as $dinnerTime) {

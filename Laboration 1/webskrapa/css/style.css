@@ -1,0 +1,130 @@
+body{
+    font: bold 14px Arial;
+    text-align: center;
+    background-color: #3d3d3d;
+}
+
+.container{
+    width: 800px;
+    height: 800px;
+    margin: 0 auto;
+    margin-top: 25px;
+    background-color: #f6e8f6;
+    padding-top:15px;
+    padding-bottom: 75px;
+    border: groove 4px black;
+}
+
+#formdiv{
+    text-align: center;
+    width: 800px;
+    margin: 0 auto;
+}
+
+#urlform{
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 390px;
+    background-color: gainsboro;
+}
+
+#urlfield{
+    width: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#submitbutton{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 3px;
+    font: bold 12px Arial;
+    text-decoration: none;
+    background-color: #EEEEEE;
+    color: #333333;
+    padding: 2px 6px 2px 6px;
+    border-top: 1px solid #CCCCCC;
+    border-right: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #CCCCCC;
+}
+
+#results{
+    margin-top: 50px;
+}
+
+h1{
+    margin-top: 10px;
+    color: #62008b;
+}
+
+h2{
+    color: #62008b;
+    margin-bottom: 30px;
+}
+
+h3{
+    color: #62008b;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+#instructions{
+    margin-bottom: 30px;
+}
+
+ul{
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.movieList{
+    width: 300px;
+}
+
+.movie{
+    background-color: white;
+    text-align: left;
+    border: solid 1px dimgray;
+    padding: 7px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+a{
+    float: right;
+    font: bold 12px Arial;
+    text-decoration: none;
+    background-color: #EEEEEE;
+    color: #333333;
+    padding: 2px 6px 2px 6px;
+    border-top: 1px solid #CCCCCC;
+    border-right: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #CCCCCC;
+}
+
+.error{
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 300px;
+    background-color: gainsboro;
+    color: darkred;
+    padding: 15px;
+    border: solid 1px black;
+}
+
+.dinnerList{
+
+}
+
+.dinner{
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 300px;
+    background-color: white;
+    text-align: center;
+    border: solid 1px dimgray;
+    padding: 15px;
+}
