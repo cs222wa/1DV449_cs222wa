@@ -1,6 +1,6 @@
 <?php
 //Scraper class
-namespace model;
+namespace Model;
 
 class Scraper
 {
@@ -8,6 +8,8 @@ class Scraper
     public function fetchCurlPage($url)
     {
         $ch = curl_init();
+        //setup a user agent identification
+        curl_setopt( $ch, CURLOPT_USERAGENT, 'cs222wa@student.lnu.se' );
         //specify the page to be fetched
         curl_setopt($ch, CURLOPT_URL, $url);
         //do not print the fetched page.

@@ -1,9 +1,9 @@
 <?php
 //LayoutView class
-namespace view;
+namespace View;
 
-use model\Compiler;
-use model\Scraper;
+use Model\Compiler;
+use Model\Scraper;
 
 class LayoutView
 {
@@ -61,12 +61,17 @@ class LayoutView
             //returns the compiled results of the scraping
             $results = $compiler->fetchMovieResults();
             //concatinate values from result array into a list html element and return to view.
-            $display = "<h2>Enligt era kalendrar har ni möjlighet att se följande filmer: </h2>";
+            $display = "<h2>Tillgängliga filmer: </h2>";
             $display .= "<ul class='movieList'>";
-            foreach($results as $key=>$value){
-                //make a HTML list item containing title and time of every movie available with a selection link
-                $display .= "<li class='movie'>" . $value['title'] . ", som går klockan: " . $value['time']. " på " . $value['day'].
-                    "<a href=" . '?day='. $value['day'] . '&time='. $value['time'] . '&url='. $url . "> Välj film</a></li>";
+            if(count($results) == 0){
+                $display .= "<p class='error'>Tyvärr, det fanns inga passande filmer :(</p>";
+            }
+            else{
+                foreach($results as $key=>$value){
+                    //make a HTML list item containing title and time of every movie available with a selection link
+                    $display .= "<li class='movie'>" . $value['title'] . ", som går klockan: " . $value['time']. " på " . $value['day'].
+                        "<a href=" . '?day='. $value['day'] . '&time='. $value['time'] . '&url='. $url . "> Välj film</a></li>";
+                }
             }
             $display .= "</ul>";
             return $display;
@@ -86,14 +91,16 @@ class LayoutView
             //fetch results of dinner scraping
             $dinnerResults = $compiler->fetchDinnerResults($_GET['day'], $_GET['time']);
             //concatinate values from result array into a list html element and return to view.
-            $display = "<h2>Dessa bokningar finns tillgängliga som passar filmen ni vill se: </h2>";
+            $display = "<h2>Tillgängliga bokningar: </h2>";
             $display .= "<ul class='dinnerList'>";
 
-            //if count array == 0 - sätt display till inga tider.
-        //else foreach nedan
-
-            foreach($dinnerResults as $dinnerTime) {
-                $display .= "<li class='dinner'>" . $dinnerTime ."</li>";
+            if(count($dinnerResults) == 0){
+                $display .= "<p class='error'>Tyvärr, det fanns inga lediga bord att boka :(</p>";
+            }
+        else{
+                foreach($dinnerResults as $dinnerTime) {
+                    $display .= "<li class='dinner'>Mellan klockan " . implode(".00 - ", str_split($dinnerTime, 2)). ".00" ."</li>";
+                }
             }
             $display .= "</ul>";
 
