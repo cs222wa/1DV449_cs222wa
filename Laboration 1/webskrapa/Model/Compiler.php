@@ -4,6 +4,7 @@ namespace model;
 
 use model\Scraper;
 
+
 class Compiler
 {
     private $url;
@@ -31,23 +32,41 @@ class Compiler
     public function fetchDinnerResults($day, $time){
         $dinnerSelections = $this->scraper->scrapeDinner($this->url . $this->startLinks[2] ."/", $day);
 
-        //TODO:
-        //get $this->freeDays (01, 02, 03)
-        //assign 01 = fre, 02 = lor 03 = son
-        //if attribute in freeDay corresponds with attribute in $dinnerselections string (starts with 'lor' ex: 'lor1820')
-        //save object in seperate array
-        //then compare values of time with the $time received as parameter.
-        //return array with times corresponding.
+        $dinnerOptions = array();
+        //if the day available to the friends equals friday....
+               //go through the array of dinner options and select dinners containing 'fre'
+               foreach ($dinnerSelections as $selection) {
+                   if (strpos($selection->getAttribute('value'), 'fre') === 0 && $day == 'Fredag') {
+                       $strippedDinnerTime = preg_replace("/[^0-9,.]/", "", $selection->getAttribute('value'));
+                       $strippedMovieTime = preg_replace("/[^0-9,.]/", "", $time);
+                       // if the starting time of the dinner is greater or 2h later than the starting time of the movie...
+                       if ($strippedDinnerTime - 200 >= $strippedMovieTime) {
+                           //...place option in a new array
+                           array_push($dinnerOptions, $strippedDinnerTime);
+                       }
+                   }
+                   if (strpos($selection->getAttribute('value'), 'lor') === 0 && $day == 'Lördag') {
+                       $strippedDinnerTime = preg_replace("/[^0-9,.]/", "", $selection->getAttribute('value'));
+                       $strippedMovieTime = preg_replace("/[^0-9,.]/", "", $time);
+                       // if the starting time of the dinner is greater or 2h later than the starting time of the movie...
+                       if ($strippedDinnerTime - 200 >= $strippedMovieTime) {
+                           //...place option in a new array
+                           array_push($dinnerOptions, $strippedDinnerTime);
+                       }
+                   }
+                   if (strpos($selection->getAttribute('value'), 'son') === 0 && $day == 'Söndag') {
+                       $strippedDinnerTime = preg_replace("/[^0-9,.]/", "", $selection->getAttribute('value'));
+                       $strippedMovieTime = preg_replace("/[^0-9,.]/", "", $time);
+                       // if the starting time of the dinner is greater or 2h later than the starting time of the movie...
+                       if ($strippedDinnerTime - 200 >= $strippedMovieTime) {
+                           //...place option in a new array
+                           array_push($dinnerOptions, $strippedDinnerTime);
+                       }
+                   }
+               }
 
-
-
-        //compare values of day, time with nodeValues in scraped information from $dinner
-        //in order to return array of corresponding dinner options.
-        foreach($dinnerSelections as $selection){
-            var_dump($selection->getAttribute('value'));
-        }
-
-        return "";
+        var_dump($dinnerOptions);
+        return $dinnerOptions;
     }
 
     private function getFreeDays(){

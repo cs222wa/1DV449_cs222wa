@@ -7,9 +7,6 @@ use model\Scraper;
 
 class LayoutView
 {
-    public function __construct(){
-        $this->pickMovie();
-    }
 
 //calls function to render HTML layout
     public function setLayout()
@@ -72,24 +69,34 @@ class LayoutView
                     "<a href=" . '?day='. $value['day'] . '&time='. $value['time'] . '&url='. $url . "> Välj film</a></li>";
             }
             $display .= "</ul>";
-            //$this->pickMovie($compiler);
             return $display;
+        }
+        if (isset($_GET['day']) && isset($_GET['time'])){
+            return $this->pickMovieAndDisplayDinnerOptions();
         }
         //if no adress has been added - return false;
         return false;
     }
 
     //function used to "onclick" the movie-link
-    public function pickMovie(){
-
-        if (isset($_GET['day']) && isset($_GET['time'])){
-
+    public function pickMovieAndDisplayDinnerOptions(){
             $url = $_GET['url'];
             $compiler = new Compiler($url);
             //returns the compiled results of the scraping
             //fetch results of dinner scraping
-            return $compiler->fetchDinnerResults($_GET['day'], $_GET['time']);
-        }
-        return false;
+            $dinnerResults = $compiler->fetchDinnerResults($_GET['day'], $_GET['time']);
+            //concatinate values from result array into a list html element and return to view.
+            $display = "<h2>Dessa bokningar finns tillgängliga som passar filmen ni vill se: </h2>";
+            $display .= "<ul class='dinnerList'>";
+
+            //if count array == 0 - sätt display till inga tider.
+        //else foreach nedan
+
+            foreach($dinnerResults as $dinnerTime) {
+                $display .= "<li class='dinner'>" . $dinnerTime ."</li>";
+            }
+            $display .= "</ul>";
+
+            return $display;
     }
 }
