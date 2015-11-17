@@ -29,11 +29,24 @@ class Compiler
     }
 
     public function fetchDinnerResults($day, $time){
-        //var_dump('hej');
-        $dinner = $this->scraper->scrapeDinner($day);
+        $dinnerSelections = $this->scraper->scrapeDinner($this->url . $this->startLinks[2] ."/", $day);
+
+        //TODO:
+        //get $this->freeDays (01, 02, 03)
+        //assign 01 = fre, 02 = lor 03 = son
+        //if attribute in freeDay corresponds with attribute in $dinnerselections string (starts with 'lor' ex: 'lor1820')
+        //save object in seperate array
+        //then compare values of time with the $time received as parameter.
+        //return array with times corresponding.
+
+
 
         //compare values of day, time with nodeValues in scraped information from $dinner
         //in order to return array of corresponding dinner options.
+        foreach($dinnerSelections as $selection){
+            var_dump($selection->getAttribute('value'));
+        }
+
         return "";
     }
 

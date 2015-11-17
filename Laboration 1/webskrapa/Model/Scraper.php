@@ -121,10 +121,14 @@ class Scraper
     }
 
 
-    public function scrapeDinner($day){
-        //fetch all available on the day selected.
-        //return json_decoded array.
-        return "";
+    public function scrapeDinner($dinnerUrl, $day){
+        //fetch dinner page
+        $page = $this->fetchCurlPage($dinnerUrl);
+        //create xpath to cinema page
+        $xpath = $this->createXPath($page);
+        //get nodes from radio button
+        $selections = $xpath->query('//input[@name="group1"]');
+        return $selections;
     }
 
 
