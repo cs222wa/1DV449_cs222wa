@@ -1,6 +1,7 @@
 <?php
 //INCLUDE THE FILES NEEDED...
 require_once('view/LayoutView.php');
+require_once('view/DinnerView.php');
 require_once('model/Compiler.php');
 require_once('model/Scraper.php');
 
@@ -10,7 +11,6 @@ require_once('model/Scraper.php');
 //MAKE SURE ERRORS ARE SHOWN... MIGHT WANT TO TURN THIS OFF ON A PUBLIC SERVER
 error_reporting(E_ALL);
 ini_set('display_errors', 'On');
-
 
 $layoutView = new \view\LayoutView();
 $layoutView->setLayout();

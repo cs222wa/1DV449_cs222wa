@@ -121,8 +121,11 @@ class Scraper
     }
 
 
-    private function scrapeDinner(){
-
+    public function scrapeDinner($day){
+        //fetch all available on the day selected.
+        //return json_decoded array.
+        return "";
     }
+
 
 }

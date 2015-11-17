@@ -22,12 +22,20 @@ class Compiler
         $this->cinemaDays = $this->cinemaDays(); //get the days cinema is displayed
         $this->cinemaSelections = $this->cinemaSelections(); //get the titles of the movies available.
         $this->movies = $this->getMovies();
-        //call function to scrape /dinner
     }
 
     //compiles the results from the different arrays
     public function fetchMovieResults(){
         return $this->movies;
+    }
+
+    public function fetchDinnerResults($day, $time){
+        $dinner = $this->scraper->scrapeDinner($day);
+
+        //compare values of day, time with nodeValues in scraped information from $dinner
+        //in order to return array of corresponding dinner options.
+
+        return "";
     }
 
     private function getFreeDays(){
@@ -71,7 +79,6 @@ class Compiler
         return $freeWeekendDays;
     }
 
-
     private function cinemaDays(){
         $movieUrl = $this->url . $this->startLinks[1];
         $movieDays = $this->scraper->scrapeCinemaDays($movieUrl);
@@ -89,5 +96,4 @@ class Compiler
         $movies = $this->scraper->getMovies($movieUrl, $this->freeDays,  $this->cinemaDays, $this->cinemaSelections);
         return $movies;
     }
-
 }
