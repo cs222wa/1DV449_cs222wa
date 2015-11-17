@@ -11,7 +11,6 @@ class Compiler
     private $startLinks;
     private $freeDays;
     private $cinemaDays;
-    private $decodedMovies;
     private $movies;
 
     public function __construct($url){
@@ -30,11 +29,11 @@ class Compiler
     }
 
     public function fetchDinnerResults($day, $time){
+        //var_dump('hej');
         $dinner = $this->scraper->scrapeDinner($day);
 
         //compare values of day, time with nodeValues in scraped information from $dinner
         //in order to return array of corresponding dinner options.
-
         return "";
     }
 
