@@ -15,6 +15,9 @@ It is possible to perform an SQL injection in the password form on the index pag
 ######Consequences
 This enables an unathorized user to login to the application as user1. The submitted username does not affect which user that gets logged in when the SQL injection is used. Other code may also be injectable through this form, providing a large security flaw in the application. 
 ######Suggested measures: 
+* Use a safe API which provides a parameterized interface, without using the interpreter. If none is available, escape specific special characters, using the escape syntax for that enterpretor.  
+* Also,  ‘white list’ the input as part of validation, but remember that it is not a complete defence since many applications require special characters in their input – then only use API and/or escape syntax.
+[#1, page 7}
 
 ###Broken Authentication and Session Management
 ######Estimated risk
