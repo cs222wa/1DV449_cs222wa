@@ -34,18 +34,22 @@ Functionalities in an application which somehow relate to authentication and/or 
 * The sessions are not timed out.
 * Authentication tokens should be invalidated when logged out, which they are currently not.
 * Sessions ID’s does not rotate after login, at the moment they remain the same throughout the full session. 
+* Session ID's are not destroyed after logoug.
 * Data is not sent through an encrypted connection – uses http, not https.
 
 ######Consequences
-None hashed passwords are a security risk since they are not protected should the database be compromised. If a logged in user doesn’t log out but simply closes the tab while sessions are not timed out another user can open the same address and automatically be logged in. Authentication tokens should not be acceptable to use once the user has been logged out.
-The sessions ID does not change after a user is logged in – this makes hijacking sessions much easier.
-A non encrypted connection sends all information in clear text, making interception very easy. [#1, page 8]
+* None hashed passwords are a security risk since they are not protected when stored as clear text. 
+* If a logged in user doesn’t log out but simply closes the tab (not the entire browser) when a session are not timed out another user can then open up the same address hours later and automatically be logged in, being fully authenticated as the previous user. 
+* Authentication tokens should not be acceptable to use once the user has been logged out.
+* If a sessions ID isn't changed after a user logs in/ terminated after a user logs out, hijacking sessions immediately becomes much easier.
+* When a non encrypted connection sends all information between the client and server in clear text, interception of sensetive information becomes very easy. [#1, page 8]
+
 ######Suggested measures
-* Store passwords with hash in database.
-* Set a time out / max length to sessions [#2, Session Expiration]
-* Invalidate Authentication Tokens when user logs out of the application.
-* When a successful login has been made, assign logged in user a new sessionID – [#2, Session Expiration]
-* Make sure the application uses https when sending data between client and server.
+* Store passwords with hash in database. [#1, page 12]
+* Set a time out / max length to sessions [#2, chapter: Session Expiration]
+* Make sure sessions are terminated and authentication tokens are invalidated when a user logs out of the application. [#1, page 8]
+* When a successful login has been made, assign logged in user a new sessionID – [#1, page 8] [#2, Session Expiration]
+* Make sure the application uses an encrypted connection while sending data between client and server. [#1, page 8]
 
 ###Missing Function Level Access Control
 ######Estimated risk
