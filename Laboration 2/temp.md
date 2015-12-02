@@ -51,6 +51,24 @@ Functionalities in an application which somehow relate to authentication and/or 
 * When a successful login has been made, assign logged in user a new sessionID – [#1, page 8] [#2, Session Expiration]
 * Make sure the application uses an encrypted connection while sending data between client and server. [#1, page 8]
 
+###Cross-Site Scripting (XXS)
+######Estimated risk
+Average
+######Exploitability
+Average
+######Abstract
+XSS flaws occur whenever an application takes untrusted data and sends it to a web browser without proper validation or escaping. XSS allows attackers to execute scripts in the victim’s browser which can hijack user sessions, deface web sites, or redirect the user to malicious sites. [#1, page 6]
+######Specific findings
+* It is possible to send scripts and hostile code as messages in the application. 
+
+######Consequences
+Hostile code which reveals sensetive information like a user's session ID's and other cookie information to a potential attacker is insertable into the application, resulting in a complete account or application hijacking.
+######Suggested measures
+* Make sure that characters which are included in script syntaxes are escaped from the input applied in the message field of the application. This will make it impossible for the interpretor to view the input as code. [#3]
+* Whitelist the input from the message form to make sure it is not hostile. [#3]
+* Only allow a specific length of characters to be inserted into the message form.[#3]
+
+
 ###Missing Function Level Access Control
 ######Estimated risk
 High
@@ -86,13 +104,16 @@ Attackers can trick the user’s browser to make authenticated requests, for exa
 
 
 ###References
-[#1] Creative Commons Attribution Share-Alike, "Category:OWASP Top Ten Project," OWASP, June 2013. 
+[#1] Creative Commons Attribution Share-Alike, "OWASP Top Ten Project," OWASP, June 2013. 
 [PDF] Available: http://owasptop10.googlecode.com/files/OWASP%20Top%2010%20-%202013.pdf. 
 [Downloaded: 2015-12-01]
 
 [#2] 
 Raul Siles (DinoSec), "Session Management Cheat Sheet," OWASP.org, September 2015. 
 [Wikipedia site] Available: https://www.owasp.org/index.php/Session_Management_Cheat_Sheet#Automatic_Session_Expiration [Viewed: December 2015]
+
+[#3] The Open Web Application Security Project, "OWASP Periodic Table of Vulnerabilities", November 2013. 
+[Wikipedia site] Available: https://www.owasp.org/index.php/OWASP_Periodic_Table_of_Vulnerabilities_-_Cross-Site_Scripting_(XSS) [Viewed: December 2015]
 
 
 
