@@ -94,7 +94,8 @@ Average
 ######Abstract
 When an CSRF attack is performed, it forces a victim's browser to send a forged HTTP request containing the victim's session cookie along with automatically included authentication information, to a vulnerable web application. This in turn makes it possible for an attacker to force the victim's browser to generate requests towards that application which will then be interpreted as authenticated requests from the victim. [#1, page 6]
 ######Specific findings
-* No use of re-authentication (like CAPTCHA) to validate a human user.
+* No token is sent in the body or URL of the applicaion.
+* There is no use of any re-authentication methid (like CAPTCHA) to validate a human user.
 ######Consequences
 Attackers can trick the user’s browser to make authenticated requests, for example purchases, update account details, money transfers, login/logout etc.
 ######Suggested measures
