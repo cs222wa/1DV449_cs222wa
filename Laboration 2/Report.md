@@ -102,22 +102,6 @@ Attackers can trick the user’s browser to make authenticated requests, for exa
 * Send an unpredictable token in each HTTP request made. Include it in a hidden field in the body, not in the URL to make it less exposable to threats and attackers. [#1, page 14]
 * Use at least one unique token/unique session and user. [#1, page 14]
 
-
-
-###References
-[#1] Creative Commons Attribution Share-Alike, "OWASP Top Ten Project," OWASP, June 2013. 
-[PDF] Available: http://owasptop10.googlecode.com/files/OWASP%20Top%2010%20-%202013.pdf. 
-[Downloaded: 2015-12-01]
-
-[#2] 
-Raul Siles (DinoSec), "Session Management Cheat Sheet," OWASP.org, September 2015. 
-[Wikipedia site] Available: https://www.owasp.org/index.php/Session_Management_Cheat_Sheet#Automatic_Session_Expiration [Viewed: December 2015]
-
-[#3] The Open Web Application Security Project, "OWASP Periodic Table of Vulnerabilities", November 2013. 
-[Wikipedia site] Available: https://www.owasp.org/index.php/OWASP_Periodic_Table_of_Vulnerabilities_-_Cross-Site_Scripting_(XSS) [Viewed: December 2015]
-
-
-
 ##Performance Problems
 
 ###Expiration header
@@ -144,3 +128,15 @@ It is important that we, as future web developers, understand these risks; not j
 _"Know your enemy and know yourself, find naught in fear for 100 battles." - Sun Tzu, The Art of War._
 
 
+
+###References
+[#1] Creative Commons Attribution Share-Alike, "OWASP Top Ten Project," OWASP, June 2013. 
+[PDF] Available: http://owasptop10.googlecode.com/files/OWASP%20Top%2010%20-%202013.pdf. 
+[Downloaded: 2015-12-01]
+
+[#2] 
+Raul Siles (DinoSec), "Session Management Cheat Sheet," OWASP.org, September 2015. 
+[Wikipedia site] Available: https://www.owasp.org/index.php/Session_Management_Cheat_Sheet#Automatic_Session_Expiration [Viewed: December 2015]
+
+[#3] The Open Web Application Security Project, "OWASP Periodic Table of Vulnerabilities", November 2013. 
+[Wikipedia site] Available: https://www.owasp.org/index.php/OWASP_Periodic_Table_of_Vulnerabilities_-_Cross-Site_Scripting_(XSS) [Viewed: December 2015]
