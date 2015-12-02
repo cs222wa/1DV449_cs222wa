@@ -55,7 +55,6 @@ Usually an application verifies a user's function level access before making the
 * Using the extensions app Postman in Google Chrome, it is possible to make a POST request to the functionality message/delete without any authorisation and get an “OK” returned in the body. 
 * It is also possible for a not-logged in user to access the message board by typing “/message” into the URL field.
 
-
 ######Consequences
 Even though the application will not display any messages until a message is sent from a user, if a user logs out and then someone clicks the back navigation button in the browser, and then clicks the “Write your message”-button, the messages will still show. (This is a conjoined with the security problem “Broken Authentication and Session Management” since the sessions are not timed out, keeping the previous user’s session alive even after logout.)
 Concerning the POST request made in Postman to the message/delete URL, it is unfortunately not possible to know if this action would actually delete any messages, since the application seems to have faulty implementation of the functionality. Calling the URL: “message/delete” through Postman OR as logged in Administrator, does not remove any messages.
@@ -64,11 +63,19 @@ Use a consistent authorization module which should be called by all business fun
 
 ###Cross-Site Request Forgery (CSRF)
 ######Estimated risk
+Moderate
 ######Exploitability
+Average
 ######Abstract
+When an CSRF attack is performed, it forces a victim's browser to send a forged HTTP request containing the victim's session cookie along with automatically included authentication information, to a vulnerable web application. This in turn makes it possible for an attacker to force the victim's browser to generate requests towards that application which will then be interpreted as authenticated requests from the victim. [#1, page 6]
 ######Specific findings
+* No tokens sent or requested with Postman on login, send/delete message or logout.
+* No use of re-authentication (like CAPTCHA) to validate a human user.
 ######Consequences
+Attackers can trick the user’s browser to make authenticated requests, for example purchases, update account details, money transfers, login/logout etc.
 ######Suggested measures
+* Send an unpredictable token in each HTTP request made. Include it in a hidden field in the body, not in the URL to make it less exposable to threats and attackers. [#1, page 14]
+* Use at least one unique token/unique session and user. [#1, page 14]
 
 
 
