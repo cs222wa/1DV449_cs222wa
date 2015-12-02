@@ -10,10 +10,9 @@
 
 ###Cross-Site Request Forgery (CSRF)
 
-Estimated risk | Exploitability | Abstract
------------- | ------------- | -------------
-1 | 2 | 3
-
+######Estimated risk
+######Exploitability
+######Abstract
 ######Specific findings
 ######Consequences
 ######Suggested measures
