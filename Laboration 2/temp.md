@@ -69,7 +69,6 @@ Average
 ######Abstract
 When an CSRF attack is performed, it forces a victim's browser to send a forged HTTP request containing the victim's session cookie along with automatically included authentication information, to a vulnerable web application. This in turn makes it possible for an attacker to force the victim's browser to generate requests towards that application which will then be interpreted as authenticated requests from the victim. [#1, page 6]
 ######Specific findings
-* No tokens sent or requested with Postman on login, send/delete message or logout.
 * No use of re-authentication (like CAPTCHA) to validate a human user.
 ######Consequences
 Attackers can trick the user’s browser to make authenticated requests, for example purchases, update account details, money transfers, login/logout etc.
@@ -90,7 +89,7 @@ Raul Siles (DinoSec), "Session Management Cheat Sheet," OWASP.org, September 201
 
 
 
-##Security Problems
+##Performance Problems
 
 ##Bootstrap
 From what I can tell, the bootstrap.css files are loaded, but never used in the application, resulting in uneccesary loading time. 
