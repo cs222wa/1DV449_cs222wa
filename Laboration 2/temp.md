@@ -84,3 +84,8 @@ Attackers can trick the user’s browser to make authenticated requests, for exa
 [PDF] Available: http://owasptop10.googlecode.com/files/OWASP%20Top%2010%20-%202013.pdf. 
 [Downloaded: 2015-12-01]
 
+[#2] 
+Raul Siles (DinoSec), "Session Management Cheat Sheet," OWASP.org, September 2015. 
+[Wikipedia site] Available: https://www.owasp.org/index.php/Session_Management_Cheat_Sheet#Automatic_Session_Expiration [Viewed: December 2015]
+
+
