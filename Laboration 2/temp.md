@@ -89,3 +89,9 @@ Raul Siles (DinoSec), "Session Management Cheat Sheet," OWASP.org, September 201
 [Wikipedia site] Available: https://www.owasp.org/index.php/Session_Management_Cheat_Sheet#Automatic_Session_Expiration [Viewed: December 2015]
 
 
+
+##Security Problems
+
+##Bootstrap
+From what I can tell, the bootstrap.css files are loaded, but never used in the application, resulting in uneccesary loading time. 
+
