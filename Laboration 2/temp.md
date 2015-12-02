@@ -32,6 +32,7 @@ Functionalities in an application which somehow relate to authentication and/or 
 * Authentication tokens should be invalidated when logged out, which they are currently not.
 * Sessions ID’s does not rotate after login, at the moment they remain the same throughout the full session. 
 * Data is not sent through an encrypted connection – uses http, not https.
+
 ######Consequences
 None hashed passwords are a security risk since they are not protected should the database be compromised. If a logged in user doesn’t log out but simply closes the tab while sessions are not timed out another user can open the same address and automatically be logged in. Authentication tokens should not be acceptable to use once the user has been logged out.
 The sessions ID does not change after a user is logged in – this makes hijacking sessions much easier.
