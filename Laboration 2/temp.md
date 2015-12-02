@@ -120,6 +120,27 @@ Raul Siles (DinoSec), "Session Management Cheat Sheet," OWASP.org, September 201
 
 ##Performance Problems
 
-##Bootstrap
-From what I can tell, the bootstrap.css files are loaded, but never used in the application, resulting in uneccesary loading time. 
+###Expiration header
+The Expiration header of the application is set to -1, meaning that nothing is saved in the application's cache. This means that each time the page is accessed, all its content must be reloaded from scratch. This causes an uneccessarily large amount of HTTP requests, slowing the application down. Instead, set the Expiration header to a value which enables the information of the application to be saved for a longer period of time, only reloading new information when accessed.
+
+###Bootstrap
+From what I can tell, the bootstrap.css files are loaded, but never used in the application, resulting in uneccesary loading time.
+
+###Inline code
+There are CSS and JavaScript code written as inline elements in the HTML code. This is considered bad coding since it both clutters the HTML syntax and slows the application down. Place the Javascript and the CSS code in corresponding files instead and then link them into / call them from the application when needed.
+
+###Bad placement of script-links
+The script links are placed in the application page's header. This is a bad place, since it then forces the page to read the scripts before loading the body of the page, causing uneccesary loading time. Place the scripts at the bottom of the body tag instead.
+
+
+##Personal Reflections
+
+###Experience
+Most of these things, including the tools used to analyse/examine them with are very new to me. It was confusing at first, not knowing where to start, how to use the tools (Postman), what to do or even what to look for, but after some reading up and discussions with classmates it all slowly began to clear, even for me.
+I've definetely gained a whole different perspective about web security from this task and I've also come to realize how easy it is to overlook similar flaws in an application. It's no wonder the OWASP top ten security risks are what they are, since they are often things that people don't ever think about, or even know makes a difference.
+It is important that we, as future web developers, understand these risks; not just how to prevent them, but also how they work. Because a way of doing things can change, and if they do then we must understand what it is that's changed before we can do anything about it in response. 
+
+
+_"Know your enemy and know yourself, find naught in fear for 100 battles." - Sun Tzu, The Art of War._
+
 
