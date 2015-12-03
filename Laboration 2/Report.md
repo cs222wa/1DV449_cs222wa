@@ -14,11 +14,11 @@ Injection occurs when data is sent to the interpreter as part of a command or qu
 It is possible to perform an SQL injection in the password form on the index page. 
 In the file login.js, the variables for password and username are being concatenated into the SQL query which is then run in the function “checkLogin”.
 ######Consequences
-* This enables an unathorized user to login to the application as user1 by submitting the input “ anything’ OR ‘x’=’x “ as password. (The submitted username does not affect which user that gets logged in when the SQL injection is used.) 
+* This enables an unauthorized user to login to the application as user1 by submitting the input “ anything’ OR ‘x’=’x “ as password. (The submitted username does not affect which user that gets logged in when the SQL injection is used.) 
 * The concatenation of the SQL query also means that any variable value passed from the password form, for example “DROP TABLE….” will be interpreted into the SQL query and executed accordingly, providing a large security flaw in the application. 
 
 ######Suggested measures: 
-* Use a safe API which provides a parameterized interface, without using the interpreter. If none is available, escape specific special characters, using the escape syntax for that enterpretor.  [#1, page 7}
+* Use a safe API which provides a parameterized interface, without using the interpreter. If none is available, escape specific special characters, using the escape syntax for that interpreter.  [#1, page 7}
 * Also,  ‘white list’ the input as part of validation, but remember that it is not a complete defence since many applications require special characters in their input – then only use API and/or escape syntax.
 [#1, page 7}
 
@@ -34,7 +34,7 @@ Functionalities in an application which somehow relate to authentication and/or 
 * The sessions are not timed out.
 * Authentication tokens should be invalidated when logged out, which they are currently not.
 * Sessions ID’s does not rotate after login, at the moment they remain the same throughout the full session. 
-* Session ID's are not destroyed after logoug.
+* Session ID's are not destroyed after logout.
 * Data is not sent through an encrypted connection – uses http, not https.
 
 ######Consequences
@@ -42,13 +42,13 @@ Functionalities in an application which somehow relate to authentication and/or 
 * If a logged in user doesn’t log out but simply closes the tab (not the entire browser) when a session are not timed out another user can then open up the same address hours later and automatically be logged in, being fully authenticated as the previous user. 
 * Authentication tokens should not be acceptable to use once the user has been logged out.
 * If a sessions ID isn't changed after a user logs in/ terminated after a user logs out, hijacking sessions immediately becomes much easier.
-* When a non encrypted connection sends all information between the client and server in clear text, interception of sensetive information becomes very easy. [#1, page 8]
+* When a non-encrypted connection sends all information between the client and server in clear text, interception of sensitive information becomes very easy. [#1, page 8]
 
 ######Suggested measures
 * Store passwords with hash in database. [#1, page 12]
 * Set a time out / max length to sessions [#2, chapter: Session Expiration]
 * Make sure sessions are terminated and authentication tokens are invalidated when a user logs out of the application. [#1, page 8]
-* When a successful login has been made, assign logged in user a new sessionID – [#1, page 8] [#2, Session Expiration]
+* When a successful login has been made, assign logged in user a new session ID – [#1, page 8] [#2, Session Expiration]
 * Make sure the application uses an encrypted connection while sending data between client and server. [#1, page 8]
 
 ###Cross-Site Scripting (XXS)
@@ -62,11 +62,11 @@ XSS flaws occur whenever an application takes untrusted data and sends it to a w
 * It is possible to send scripts and hostile code as messages in the application. 
 
 ######Consequences
-Hostile code which reveals sensetive information like a user's session ID's and other cookie information to a potential attacker is insertable into the application, resulting in a complete account or application hijacking.
+Hostile code which reveals sensitive information like a user's session ID's and other cookie information to a potential attacker is injectable into the application, resulting in a complete account or application hijacking.
 ######Suggested measures
-* Make sure that characters which are included in script syntaxes are escaped from the input applied in the message field of the application. This will make it impossible for the interpretor to view the input as code. [#3]
+* Make sure that characters which are included in script syntaxes are escaped from the input applied in the message field of the application. This will make it impossible for the interpreter to view the input as code. [#3]
 * Whitelist the input from the message form to make sure it is not hostile. [#3]
-* Only allow a specific length of characters to be inserted into the message form.[#3]
+* Only allow a specific length of characters to be inserted into the message form. [#3]
 
 
 ###Missing Function Level Access Control
@@ -75,7 +75,7 @@ High
 ######Exploitability
 Easy
 ######Abstract
-Usually an application verifies a user's function level access before making the functionality visible in the UI.  However, the application should also make an authorisation check on the server whenever that function is accessed. If that request is not verfified then attacks will be able to exploit that and forge requests that will enablee them to access functionality without proper authorization. [#1, page 6]
+Usually an application verifies a user's function level access before making the functionality visible in the UI.  However, the application should also make an authorisation check on the server whenever that function is accessed. If that request is not verified then attacks will be able to exploit that and forge requests that will enable them to access functionality without proper authorization. [#1, page 6]
 ######Specific findings
 * Using the extensions app Postman in Google Chrome, it is possible to make a POST request to the functionality message/delete without any authorisation and get an “OK” returned in the body. 
 * It is also possible for a not-logged in user to access the message board by typing “/message” into the URL field.
@@ -92,10 +92,10 @@ Moderate
 ######Exploitability
 Average
 ######Abstract
-When an CSRF attack is performed, it forces a victim's browser to send a forged HTTP request containing the victim's session cookie along with automatically included authentication information, to a vulnerable web application. This in turn makes it possible for an attacker to force the victim's browser to generate requests towards that application which will then be interpreted as authenticated requests from the victim. [#1, page 6]
+When a CSRF attack is performed, it forces a victim's browser to send a forged HTTP request containing the victim's session cookie along with automatically included authentication information, to a vulnerable web application. This in turn makes it possible for an attacker to force the victim's browser to generate requests towards that application which will then be interpreted as authenticated requests from the victim. [#1, page 6]
 ######Specific findings
-* No token is sent in the body or URL of the applicaion.
-* There is no use of any re-authentication methid (like CAPTCHA) to validate a human user.
+* No token is sent in the body or URL of the application.
+* There is no use of any re-authentication method (like CAPTCHA) to validate a human user.
 ######Consequences
 Attackers can trick the user’s browser to make authenticated requests, for example purchases, update account details, money transfers, login/logout etc.
 ######Suggested measures
@@ -105,23 +105,23 @@ Attackers can trick the user’s browser to make authenticated requests, for exa
 ##Performance Problems
 
 ###Expiration header
-The Expiration header of the application is set to -1, meaning that nothing is saved in the application's cache. This means that each time the page is accessed, all its content must be reloaded from scratch. This causes an uneccessarily large amount of HTTP requests, slowing the application down. Instead, set the Expiration header to a value which enables the information of the application to be saved for a longer period of time, only reloading new information when accessed.
+The Expiration header of the application is set to -1, meaning that nothing is saved in the application's cache. This means that each time the page is accessed, all its content must be reloaded from scratch. This causes an unnecessarily large amount of HTTP requests, slowing the application down. Instead, set the Expiration header to a value which enables the information of the application to be saved for a longer period of time, only reloading new information when accessed.
 
 ###Bootstrap
-From what I can tell, the bootstrap.css files are loaded, but never used in the application, resulting in uneccesary loading time.
+From what I can tell, the bootstrap.css files are loaded, but never used in the application, resulting in unnecessary loading time.
 
 ###Inline code
-There are CSS and JavaScript code written as inline elements in the HTML code. This is considered bad coding since it both clutters the HTML syntax and slows the application down. Place the Javascript and the CSS code in corresponding files instead and then link them into / call them from the application when needed.
+There are CSS and JavaScript code written as inline elements in the HTML code. This is considered bad coding since it both clutters the HTML syntax and slows the application down. Place the JavaScript and the CSS code in corresponding files instead and then link them into / call them from the application when needed.
 
 ###Bad placement of script-links
-The script links are placed in the application page's header. This is a bad place, since it then forces the page to read the scripts before loading the body of the page, causing uneccesary loading time. Place the scripts at the bottom of the body tag instead.
+The script links are placed in the application page's header. This is a bad place, since it then forces the page to read the scripts before loading the body of the page, causing unnecessary loading time. Place the scripts at the bottom of the body tag instead.
 
 
 ##Personal Reflections
 
 ###Experience
 Most of these things, including the tools used to analyse/examine them with are very new to me. It was confusing at first, not knowing where to start, how to use the tools (Postman), what to do or even what to look for, but after some reading up and discussions with classmates it all slowly began to clear, even for me.
-I've definetely gained a whole different perspective about web security from this task and I've also come to realize how easy it is to overlook similar flaws in an application. It's no wonder the OWASP top ten security risks are what they are, since they are often things that people don't ever think about, or even know makes a difference.
+I've definitely gained a whole different perspective about web security from this task and I've also come to realize how easy it is to overlook similar flaws in an application. It's no wonder the OWASP top ten security risks are what they are, since they are often things that people don't ever think about, or even know makes a difference.
 It is important that we, as future web developers, understand these risks; not just how to prevent them, but also how they work. Because a way of doing things can change, and if they do then we must understand what it is that's changed before we can do anything about it in response. 
 
 
