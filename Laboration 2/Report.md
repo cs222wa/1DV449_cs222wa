@@ -146,3 +146,9 @@ Raul Siles (DinoSec), "Session Management Cheat Sheet," OWASP.org, September 201
 
 [#3] The Open Web Application Security Project, "OWASP Periodic Table of Vulnerabilities", November 2013. 
 [Wikipedia site] Available: https://www.owasp.org/index.php/OWASP_Periodic_Table_of_Vulnerabilities_-_Cross-Site_Scripting_(XSS) [Viewed: December 2015]
+
+[#4] Steve Sounders/Andy Oram, High Performance Web Sites: Essential Knowledge for Fronend Engineers, O'Reilly, September 2007. 
+
+
+
+
