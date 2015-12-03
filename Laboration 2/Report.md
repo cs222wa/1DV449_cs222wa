@@ -107,7 +107,7 @@ Attackers can trick the user’s browser to make authenticated requests, for exa
 ##Performance Problems
 
 ###Expiration header
-The Expiration header of the application is set to -1, meaning that nothing is saved in the application's cache. This means that each time the page is accessed, all its content must be reloaded from scratch. This causes an unnecessarily large amount of HTTP requests, slowing the application down. Instead, set the Expiration header to a value which enables the information of the application to be saved for a longer period of time, only reloading new information when accessed.
+The Expiration header of the application is set to -1, meaning that nothing is saved in the application's cache. This means that each time the page is accessed, all its content must be reloaded from scratch. This causes an unnecessarily large amount of HTTP requests, slowing the application down. Instead, set the Expiration header to a value which enables the information of the application to be saved for a longer period of time, or set a max-age value to Cache-Control. This way the application will only reload information that's been added to the page.
 
 ###Resources
 From what I can tell, the bootstrap.css files are loaded, but never used in the application, resulting in unnecessary loading time.
