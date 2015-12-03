@@ -109,8 +109,12 @@ Attackers can trick the user’s browser to make authenticated requests, for exa
 ###Expiration header
 The Expiration header of the application is set to -1, meaning that nothing is saved in the application's cache. This means that each time the page is accessed, all its content must be reloaded from scratch. This causes an unnecessarily large amount of HTTP requests, slowing the application down. Instead, set the Expiration header to a value which enables the information of the application to be saved for a longer period of time, only reloading new information when accessed.
 
-###Bootstrap
+###Resources
 From what I can tell, the bootstrap.css files are loaded, but never used in the application, resulting in unnecessary loading time.
+The application has a background image which is loaded, but then covered up by  background color, which makes it completely uneccesary and slows down the application.
+Js is included and loaded into the application, but is not minimized, which would have made it load and run much faster.
+The web page also uses a favicon which is much larger than it should be.
+
 
 ###Inline code
 There are CSS and JavaScript code written as inline elements in the HTML code. This is considered bad coding since it both clutters the HTML syntax and slows the application down. Place the JavaScript and the CSS code in corresponding files instead and then link them into / call them from the application when needed.
