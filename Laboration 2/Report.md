@@ -79,10 +79,12 @@ Usually an application verifies a user's function level access before making the
 ######Specific findings
 * Using the extensions app Postman in Google Chrome, it is possible to make a POST request to the functionality message/delete without any authorisation and get an “OK” returned in the body. 
 * It is also possible for a not-logged in user to access the message board by typing “/message” into the URL field.
+* The entire database and json data is accessable without being logged in as an authorized user.
 
 ######Consequences
 Even though the application will not display any messages until a message is sent from a user, if a user logs out and then someone clicks the back navigation button in the browser, and then clicks the “Write your message”-button, the messages will still show. (This is a conjoined with the security problem “Broken Authentication and Session Management” since the sessions are not timed out, keeping the previous user’s session alive even after logout.)
 Concerning the POST request made in Postman to the message/delete URL, it is unfortunately not possible to know if this action would actually delete any messages, since the application seems to have faulty implementation of the functionality. Calling the URL: “message/delete” through Postman OR as logged in Administrator, does not remove any messages.
+The fact that the entire database and json data is accessable is on its own catastrophic since it makes it possible for any intruder or user to exploit its information of the application to the fullest.
 ######Suggested measures
 Use a consistent authorization module which should be called by all business functionalities to make sure user is authorized to use the specific functionality. It should, by default, deny access to everything, and then grant access to specific roles for each specific function. Also, there should be authorization checks implemented in the application controller and/or business logic layer. [#1, page 13]
 
