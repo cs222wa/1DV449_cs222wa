@@ -1,7 +1,12 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Carolina
- * Date: 2015-12-13
- * Time: 11:11
- */
+class Controller
+{
+    private $webService;
+    public function __construct(){
+        $this->webService = new Radio();
+    }
+    public function getTraffic()
+    {
+        $this->webService->getInfo();
+    }
+}

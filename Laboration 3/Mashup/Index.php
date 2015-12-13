@@ -13,6 +13,6 @@ $c = new Controller();
 $v = new HtmlView();
 
 
-$c->mashup();
+$c->getTraffic();
 $v->render();
 
