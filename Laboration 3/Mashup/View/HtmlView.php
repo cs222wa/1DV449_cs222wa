@@ -16,13 +16,10 @@ class HtmlView
                         <h1>Traffic Information</h1>
                     </div>
                     <div id="content">
-                    <div id="map" style="height: 440px; border: 1px solid #AAA;">
-                        <p> >Map here< </p>
-                    </div>
-
+                    <div id="map" style="height: 440px; border: 1px solid #AAA;"></div>
 
                     </div>
-                    <script type="text/javascript" src="maps/markers.json"></script>
+                    <script type="text/javascript" src="response.json"></script>
                     <script type="text/javascript" src="maps/leaf-demo.js"></script>
                 </body>
             </html>
