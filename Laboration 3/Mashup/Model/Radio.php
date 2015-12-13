@@ -7,11 +7,12 @@ class Radio
         $traffic = null;
         //If file is older than 15 min - create a new request
         if(file_exists(self::$fileName) && time() - filemtime(self::$fileName) > 60 * 1){
+            echo("New traffic information has been fetched.");
             //fetch new traffic information
             $traffic = $this->fetchCurlPage();
             //if the fetched information is not empty/null
             if($traffic !== null){
-                //decode json response and write to cache.
+                //write json response to cache.
                 $this->cache = fopen('response.json', 'w');
                 fwrite($this->cache, $traffic);
                 fclose($this->cache);

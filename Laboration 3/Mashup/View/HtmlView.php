@@ -5,8 +5,10 @@ class HtmlView
         echo '<!DOCTYPE html>
             <html>
                 <head>
-                     <meta charset="utf-8">
-                    <link rel="stylesheet" type="text/css" href="css/style.css">
+                    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+                    <link rel="stylesheet" type="text/css" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
+                    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> <!--JQuery Library-->
+                    <script type="text/javascript" src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js?2"></script> <!--Leaflet CSS-->
                     <title>Mashup Application</title>
                 </head>
                 <body>
@@ -14,9 +16,14 @@ class HtmlView
                         <h1>Traffic Information</h1>
                     </div>
                     <div id="content">
-                    <p> >Map here< </p>
+                    <div id="map" style="height: 440px; border: 1px solid #AAA;">
+                        <p> >Map here< </p>
+                    </div>
+
 
                     </div>
+                    <script type="text/javascript" src="maps/markers.json"></script>
+                    <script type="text/javascript" src="maps/leaf-demo.js"></script>
                 </body>
             </html>
         ';
