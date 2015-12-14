@@ -3,7 +3,6 @@ var TrafficMap = {
     date: undefined,
     json: undefined,
     url: "response.json",
-
     init:function(){
         var map = L.map( 'map', {
             center: [20.0, 5.0],
@@ -29,34 +28,24 @@ var TrafficMap = {
             if (xhr.readyState === 4 && xhr.status === 200){
                 TrafficMap.json = JSON.parse(xhr.responseText);
                 TrafficMap.messages = TrafficMap.json["messages"];
-
                 for ( var i=0; i < TrafficMap.messages.length; ++i )
                 {
-
                     TrafficMap.date = new Date(parseInt(TrafficMap.messages[i].createddate.substr(6)));
-                    //console.log(TrafficMap.date.toString("yyyy-mm-dd"));
-                    //console.log(TrafficMap.date = new Date(parseInt(TrafficMap.messages[i].createddate.substr(6))).toString("yyyy-MM-dd HH:mm:ss"));
-
-
                     L.marker( [TrafficMap.messages[i].latitude, TrafficMap.messages[i].longitude], {icon: myIcon} )
                         .bindPopup( TrafficMap.getDate() + TrafficMap.messages[i].title + ", " + TrafficMap.messages[i].subcategory + " " + TrafficMap.messages[i].exactlocation )
                         .addTo( map );
                 }
+                TrafficMap.getList(TrafficMap.messages);
             }
         };
-
         xhr.open("GET", TrafficMap.url, true);
         xhr.send(null);
     },
-
     getDate:function(){
-
         var days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
-
         Date.prototype.getDayName = function() {
             return days[ TrafficMap.date.getDay() ];
         };
-
         var day = TrafficMap.date.getDayName().toString();
         var yyyy = TrafficMap.date.getFullYear().toString();
         var mm = (TrafficMap.date.getMonth()+1).toString(); // getMonth() is zero-based
@@ -65,9 +54,30 @@ var TrafficMap = {
         var mn = TrafficMap.date.getMinutes().toString();
 
         return day + " " + yyyy + '-' + (mm[1]?mm:"0"+mm[0]) + '-' + (dd[1]?dd:"0"+dd[0]) + " " + hh + ':' + mn+ " ";
-        //return yyyy + '-' + (mm[1]?mm:"0"+mm[0]) + '-' + (dd[1]?dd:"0"+dd[0]);
+    },
+
+    getList:function(messageArray){
+
+        var listContainer = document.createElement("div");
+        document.getElementsByTagName("body")[0].appendChild(listContainer);
+        var listUl = document.createElement("ul");
+        listContainer.appendChild(listUl);
+
+        for( var i =  0 ; i < messageArray.length ; ++i){
+            var listMessage = document.createElement("li");
+            listMessage.innerHTML = messageArray[i];
+            listUl.appendChild(listMessage);
+        }
+
+        //foreach loop of messageArray.length to print list w. information, return sorted by time.
+
+        /*
+         document.createElement("div")
+         var div = document....'
+         appendChild
+         setAttribute
+         */
+
     }
-
 };
-
 window.onload = TrafficMap.init;
