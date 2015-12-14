@@ -1,4 +1,5 @@
 var TrafficMap = {
+    unsortedMessages: undefined,
     messages: undefined,
     date: undefined,
     json: undefined,
@@ -26,8 +27,12 @@ var TrafficMap = {
         var xhr = new XMLHttpRequest();
         xhr.onreadystatechange = function(){
             if (xhr.readyState === 4 && xhr.status === 200){
-                TrafficMap.json = JSON.parse(xhr.responseText);
-                TrafficMap.messages = TrafficMap.json["messages"];
+                TrafficMap.json = JSON.parse(xhr.responseText);  //replace xhr with sortedResponse
+                //var sortedResponse = TrafficMap.sortByDate(TrafficMap.json, 'messages.createddate');    //sort by date
+                TrafficMap.unsortedMessages = TrafficMap.json["messages"];
+
+                TrafficMap.messages = TrafficMap.unsortedMessages.sort(TrafficMap.sortByDate);
+
                 for ( var i=0; i < TrafficMap.messages.length; ++i )
                 {
                     TrafficMap.date = new Date(parseInt(TrafficMap.messages[i].createddate.substr(6)));
@@ -59,25 +64,38 @@ var TrafficMap = {
     getList:function(messageArray){
 
         var listContainer = document.createElement("div");
+        listContainer.setAttribute("class", "markerList");
         document.getElementsByTagName("body")[0].appendChild(listContainer);
         var listUl = document.createElement("ul");
         listContainer.appendChild(listUl);
 
         for( var i =  0 ; i < messageArray.length ; ++i){
             var listMessage = document.createElement("li");
-            listMessage.innerHTML = messageArray[i];
+            var listLink = document.createElement("a");
+            //var linkText = document.createTextNode( messageArray[i].title + ", " + messageArray[i].exactlocation);
+            //listLink.appendChild(linkText);
+            listLink.innerHTML = messageArray[i].title + ", " + messageArray[i].exactlocation;
+            listLink.setAttribute("href", "#");
+            listMessage.appendChild(listLink);
             listUl.appendChild(listMessage);
         }
 
-        //foreach loop of messageArray.length to print list w. information, return sorted by time.
 
-        /*
-         document.createElement("div")
-         var div = document....'
-         appendChild
-         setAttribute
-         */
+        //add listen.onclick event to check for clicked links
+        //and which link is clicked and then map them to the markers on the map.
 
+        //fix category-link
+
+        //add onclick event on the category links
+        //when clicked, list the category clicked first and then add remaining categories
+    },
+
+    sortByDate: function(a,b) {
+            if (a['createddate'] < b['createddate'])
+                return 1;
+            if (a['createddate'] > b['createddate'])
+                return -1;
+            return 0;
     }
 };
 window.onload = TrafficMap.init;

@@ -31,7 +31,7 @@ class Radio
     public function fetchCurlPage()
     {
         $ch = curl_init();
-        $url = "http://api.sr.se/api/v2/traffic/messages?format=json";
+        $url = "http://api.sr.se/api/v2/traffic/messages?format=json&pagination=false";
         curl_setopt( $ch, CURLOPT_USERAGENT, 'cs222wa@student.lnu.se' );
         curl_setopt($ch, CURLOPT_URL, $url);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
