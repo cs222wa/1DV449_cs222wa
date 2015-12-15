@@ -1,6 +1,6 @@
 ﻿# 1DV449_cs222wa
 
-* [Körbar version](http://cs222wa.node365.se/1dv449/mashup/Index.php)
+## [Körbar version av applikationen](http://cs222wa.node365.se/1dv449/mashup/Index.php)
 
 ##Reflektionsfrågor - Laboration 3
 ###Vad finns det för krav du måste anpassa dig efter i de olika API:erna?
