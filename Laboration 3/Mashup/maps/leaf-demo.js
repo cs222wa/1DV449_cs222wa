@@ -3,6 +3,7 @@ var TrafficMap = {
     messages: undefined,
     date: undefined,
     json: undefined,
+    markers : [],
     url: "response.json",
     init:function(){
         var map = L.map( 'map', {
@@ -27,18 +28,18 @@ var TrafficMap = {
         var xhr = new XMLHttpRequest();
         xhr.onreadystatechange = function(){
             if (xhr.readyState === 4 && xhr.status === 200){
-                TrafficMap.json = JSON.parse(xhr.responseText);  //replace xhr with sortedResponse
-                //var sortedResponse = TrafficMap.sortByDate(TrafficMap.json, 'messages.createddate');    //sort by date
+                TrafficMap.json = JSON.parse(xhr.responseText);
                 TrafficMap.unsortedMessages = TrafficMap.json["messages"];
-
                 TrafficMap.messages = TrafficMap.unsortedMessages.sort(TrafficMap.sortByDate);
-
                 for ( var i=0; i < TrafficMap.messages.length; ++i )
                 {
                     TrafficMap.date = new Date(parseInt(TrafficMap.messages[i].createddate.substr(6)));
-                    L.marker( [TrafficMap.messages[i].latitude, TrafficMap.messages[i].longitude], {icon: myIcon} )
+                    var marker = L.marker( [TrafficMap.messages[i].latitude, TrafficMap.messages[i].longitude], {icon: myIcon} )
                         .bindPopup( TrafficMap.getDate() + TrafficMap.messages[i].title + ", " + TrafficMap.messages[i].subcategory + " " + TrafficMap.messages[i].exactlocation )
                         .addTo( map );
+                    TrafficMap.markers[TrafficMap.messages[i].id] = marker;
+                    //TrafficMap.markers.push(TrafficMap.messages[i].id, marker);
+                    //console.log(TrafficMap.markers);
                 }
                 TrafficMap.getList(TrafficMap.messages);
             }
@@ -46,6 +47,7 @@ var TrafficMap = {
         xhr.open("GET", TrafficMap.url, true);
         xhr.send(null);
     },
+
     getDate:function(){
         var days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
         Date.prototype.getDayName = function() {
@@ -62,7 +64,6 @@ var TrafficMap = {
     },
 
     getList:function(messageArray){
-
         var listContainer = document.createElement("div");
         listContainer.setAttribute("class", "markerList");
         document.getElementsByTagName("body")[0].appendChild(listContainer);
@@ -72,17 +73,13 @@ var TrafficMap = {
         for( var i =  0 ; i < messageArray.length ; ++i){
             var listMessage = document.createElement("li");
             var listLink = document.createElement("a");
-            //var linkText = document.createTextNode( messageArray[i].title + ", " + messageArray[i].exactlocation);
-            //listLink.appendChild(linkText);
             listLink.innerHTML = messageArray[i].title + ", " + messageArray[i].exactlocation;
             listLink.setAttribute("href", "#");
+            listLink.setAttribute("data-id", messageArray[i].id);
+            listLink.addEventListener("click", function(){TrafficMap.activateMarker(this);});
             listMessage.appendChild(listLink);
             listUl.appendChild(listMessage);
         }
-
-
-        //add listen.onclick event to check for clicked links
-        //and which link is clicked and then map them to the markers on the map.
 
         //fix category-link
 
@@ -96,6 +93,33 @@ var TrafficMap = {
             if (a['createddate'] > b['createddate'])
                 return -1;
             return 0;
+    },
+
+    activateMarker:function(identifier){
+
+        var dataId = identifier.getAttribute("data-id");
+
+        //getPopup
+        //get popup properties
+
+        console.log(TrafficMap.markers);
+
+
+        //console.log(identifier.getAttribute("data-id"));
+
+       /* for ( var i=0; i < TrafficMap.markers.length; ++i )
+        {
+            var e = TrafficMap.markers[i]._isOpen;
+            console.log(e);
+        }
+*/
+
+
+        //console.log(messageId);
+        //Check which link is clicked and then open that specific marker on the map
+        //L.marker.openPopup()?
     }
+
+
 };
 window.onload = TrafficMap.init;
