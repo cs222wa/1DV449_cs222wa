@@ -7,7 +7,7 @@ class Radio
         $traffic = null;
         //If file is too old - create a new request
         if(file_exists(self::$fileName) && time() - filemtime(self::$fileName) > 60 * 1){
-            echo("Ny trafik information har hämtats.");
+            echo("<p>NY TRAFIKINFORMATION HAR HÄMTATS.</p>");
             //fetch new traffic information
             $traffic = $this->fetchCurlPage();
             //if the fetched information is not empty/null
@@ -24,7 +24,7 @@ class Radio
             }
         }
         else{
-            echo "Cache används";
+            echo "<p>CACHE ANVÄNDS</p>";
         }
         return false;
     }

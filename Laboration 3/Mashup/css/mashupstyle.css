@@ -1,0 +1,92 @@
+body{
+    font-family: "Arial Rounded MT Bold","Helvetica Rounded",Arial,sans-serif;
+    background-color: aliceblue;
+}
+p{
+    font-size: 11px;
+    font-style: italic;
+    margin-top: 20px;
+    margin-left: 40px;
+    background-color: white;
+    border: 1px solid lightgray;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+h1{
+    font-family: "Arial Rounded MT Bold","Helvetica Rounded",Arial,sans-serif;
+    margin: 40px;
+    margin-bottom: 50px;
+    color: #0894e1;
+
+}
+
+
+select{
+    font-weight: bold;
+    font-size: 18px;
+    color: #0894e1;
+    margin-left: 40px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#map{
+    margin-top: 70px;
+    width: 1225px;
+    float: right;
+    margin-right: 40px;
+}
+
+
+.listDiv{
+    width: 500px;
+    background-color: white;
+    border: 1px solid lightgray;
+}
+
+#List{
+    width: 600px;
+    margin: 0;
+    display: inline-block;
+}
+
+ul{
+    width: 550px;
+    margin: 0;
+    display: inline-block;
+    max-height: 70%;
+    overflow-y: scroll;
+}
+
+
+#List p{
+    margin: 0;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-style: normal;
+    border: none;
+    padding: 0;
+}
+
+#List a{
+    font-weight: bold;
+    font-size: 18px;
+    color: #0894e1;
+    text-decoration: none;
+    display: block;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+#List a:hover{
+    color: #043f5f;
+}
+
+li{
+    list-style: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

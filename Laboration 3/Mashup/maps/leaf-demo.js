@@ -35,7 +35,6 @@ var TrafficMap = {
         xhr.send(null);
         TrafficMap.getMarkers(TrafficMap.categorySelection);
     },
-
     getMarkers: function (value){
         for( var i=0; i < TrafficMap.markers.length; i++){
             TrafficMap.map.removeLayer(TrafficMap.markers[i]);
@@ -54,7 +53,6 @@ var TrafficMap = {
         }
         TrafficMap.getList(TrafficMap.messages, value);
     },
-
     getDate:function(){
         var days = ['Söndag','Måndag','Tisdag','Onsdag','Torsdag','Fredag','Lördag'];
         Date.prototype.getDayName = function() {
@@ -66,12 +64,9 @@ var TrafficMap = {
         var dd  = TrafficMap.date.getDate().toString();
         var hh = TrafficMap.date.getHours().toString();
         var mn = TrafficMap.date.getMinutes().toString();
-
         return day + " " + yyyy + '-' + (mm[1]?mm:"0"+mm[0]) + '-' + (dd[1]?dd:"0"+dd[0]) + " " + hh + ':' + mn+ " ";
     },
-
     getList:function(messageArray, value){
-
         //remove listContainer element
         var existingList = document.getElementById("List");
         if(existingList){
@@ -92,8 +87,6 @@ var TrafficMap = {
         select.options.add( new Option("Övrigt","3", value == "3", value == "3"));
         frag.appendChild(select);
         select.addEventListener("change", function(){
-            //this.option[value].prop("selected", true);
-           //select.attr('selected', true);
             TrafficMap.getCategory(select.value);
         });
         listContainer.appendChild(frag);
@@ -104,49 +97,47 @@ var TrafficMap = {
         for( var i =  0 ; i < messageArray.length ; ++i){
             if (messageArray[i]["category"] == TrafficMap.categorySelection || TrafficMap.categorySelection == 4) {
                 var listMessage = document.createElement("li");
+                var listDiv = document.createElement("div");
+                listDiv.setAttribute("class", "listDiv");
                 var listLink = document.createElement("a");
-                listLink.innerHTML = messageArray[i].title + ", " + messageArray[i].exactlocation;
+                listLink.innerHTML = messageArray[i].subcategory;
                 listLink.setAttribute("href", "#");
                 listLink.setAttribute("value", messageArray[i].latitude + ", " + messageArray[i].longitude);
                 listLink.addEventListener("click", function () {
                     TrafficMap.activateMarker(this);
                 });
-                listMessage.appendChild(listLink);
+                listDiv.appendChild(listLink);
+                var listText = document.createElement("p");
+                listText.innerHTML = messageArray[i].title + " " + messageArray[i].exactlocation;
+                listDiv.appendChild(listText);
+                listMessage.appendChild(listDiv);
                 listUl.appendChild(listMessage);
             }
         }
     },
-
     getCategory: function(value){
         switch(value) {
             case "0":
                 TrafficMap.categorySelection = 0;
-                console.log("cat 0");
                 TrafficMap.getMarkers(value);
                 break;
             case "1":
                 TrafficMap.categorySelection = 1;
-                console.log("cat 1");
                 TrafficMap.getMarkers(value);
                 break;
             case "2":
                 TrafficMap.categorySelection = 2;
-                console.log("cat 2");
                 TrafficMap.getMarkers(value);
                 break;
             case "3":
                 TrafficMap.categorySelection = 3;
-                console.log("cat 3");
                 TrafficMap.getMarkers(value);
                 break;
             default:
                 TrafficMap.categorySelection = 4;
-                console.log("cat 4");
                 TrafficMap.getMarkers(value);
         }
     },
-
-
     sortByDate: function(a,b) {
         if (a['createddate'] < b['createddate'])
             return 1;
@@ -154,7 +145,6 @@ var TrafficMap = {
             return -1;
         return 0;
     },
-
     activateMarker:function(link){
         var value = link.getAttribute("value");
         value = value.split(", ", 2);
