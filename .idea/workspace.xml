@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d8e1e09f-dc90-4722-acd9-719f45b7046b" name="Default" comment="">
+    <list default="true" id="d8e1e09f-dc90-4722-acd9-719f45b7046b" name="Default" comment="Added base structure for Assignment 3">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Laboration 3/Mashup/response.json" afterPath="$PROJECT_DIR$/Laboration 3/Mashup/response.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="1DV449_cs222wa.iws" />
@@ -27,59 +28,49 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Laboration 1/webskrapa/index.php">
+      <file leaf-file-name="Index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Laboration 3/Mashup/Index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="357">
-              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+            <state vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="408">
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LayoutView.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Laboration 1/webskrapa/View/LayoutView.php">
+      <file leaf-file-name="leaf-demo.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Laboration 3/Mashup/maps/leaf-demo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="777" max-vertical-offset="2023">
-              <caret line="100" column="43" selection-start-line="100" selection-start-column="43" selection-end-line="100" selection-end-column="43" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1275" max-vertical-offset="2839">
+              <caret line="109" column="59" selection-start-line="109" selection-start-column="59" selection-end-line="109" selection-end-column="59" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HtmlView.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Laboration 3/Mashup/View/HtmlView.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-16.346153" vertical-offset="0" max-vertical-offset="595">
+              <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
               <folding>
-                <element signature="e#42#61#0#PHP" expanded="true" />
-                <marker date="1447798209218" expanded="true" signature="303:1116" placeholder="..." />
-                <marker date="1447798209218" expanded="true" signature="322:508" placeholder="..." />
-                <marker date="1447798209218" expanded="true" signature="527:1098" placeholder="..." />
-                <marker date="1447798209218" expanded="true" signature="565:670" placeholder="..." />
-                <marker date="1447798209218" expanded="true" signature="565:702" placeholder="..." />
-                <marker date="1447798209218" expanded="true" signature="565:1034" placeholder="..." />
-                <marker date="1447798209218" expanded="true" signature="565:1077" placeholder="..." />
-                <marker date="1447798209218" expanded="true" signature="877:948" placeholder="..." />
-                <marker date="1447798209218" expanded="true" signature="877:970" placeholder="..." />
-                <marker date="1447798209218" expanded="true" signature="981:1034" placeholder="..." />
-                <marker date="1447798209218" expanded="true" signature="981:1056" placeholder="..." />
-                <marker date="1447798209218" expanded="true" signature="982:1034" placeholder="..." />
-                <marker date="1447798209218" expanded="true" signature="1254:1543" placeholder="..." />
-                <marker date="1447798209218" expanded="true" signature="1277:1306" placeholder="..." />
-                <marker date="1447798209218" expanded="true" signature="1277:1365" placeholder="..." />
-                <marker date="1447798209218" expanded="true" signature="1277:1527" placeholder="..." />
+                <marker date="1450214705501" expanded="true" signature="100:1385" placeholder="..." />
+                <marker date="1450214705501" expanded="true" signature="123:799" placeholder="..." />
+                <marker date="1450214705501" expanded="true" signature="822:1365" placeholder="..." />
+                <marker date="1450214705501" expanded="true" signature="848:946" placeholder="..." />
+                <marker date="1450214705501" expanded="true" signature="985:1175" placeholder="..." />
+                <marker date="1450214705501" expanded="true" signature="1032:1070" placeholder="..." />
+                <marker date="1450214705501" expanded="true" signature="1117:1148" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Compiler.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Laboration 1/webskrapa/Model/Compiler.php">
+      <file leaf-file-name="mashupstyle.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Laboration 3/Mashup/css/mashupstyle.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.25421822" vertical-offset="454" max-vertical-offset="2312">
-              <caret line="40" column="75" selection-start-line="40" selection-start-column="75" selection-end-line="40" selection-end-column="75" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Scraper.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Laboration 1/webskrapa/Model/Scraper.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1542" max-vertical-offset="2431">
-              <caret line="49" column="5" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.75846994" vertical-offset="309" max-vertical-offset="1666">
+              <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -103,6 +94,16 @@
         <option value="$PROJECT_DIR$/Laboration 1/webskrapa/Model/Scraper.php" />
         <option value="$PROJECT_DIR$/Laboration 1/webskrapa/View/LayoutView.php" />
         <option value="$PROJECT_DIR$/Laboration 1/webskrapa/css/style.css" />
+        <option value="$PROJECT_DIR$/Laboration 3/Mashup/Controller/Controller.php" />
+        <option value="$PROJECT_DIR$/Laboration 3/response.json" />
+        <option value="$PROJECT_DIR$/Laboration 3/Mashup/Maps/leaf_demo.js" />
+        <option value="$PROJECT_DIR$/Laboration 3/Mashup/response.json" />
+        <option value="$PROJECT_DIR$/Laboration 3 - kopia/Mashup/maps/leaf-demo.js" />
+        <option value="$PROJECT_DIR$/Laboration 3/Mashup/Index.php" />
+        <option value="$PROJECT_DIR$/Laboration 3/Mashup/Model/Radio.php" />
+        <option value="$PROJECT_DIR$/Laboration 3/Mashup/maps/leaf-demo.js" />
+        <option value="$PROJECT_DIR$/Laboration 3/Mashup/View/HtmlView.php" />
+        <option value="$PROJECT_DIR$/Laboration 3/Mashup/css/mashupstyle.css" />
       </list>
     </option>
   </component>
@@ -167,6 +168,112 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Laboration 3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Mashup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="1DV449_cs222wa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="1DV449_cs222wa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Laboration 3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Mashup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="View" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="1DV449_cs222wa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="1DV449_cs222wa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Laboration 3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Mashup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="1DV449_cs222wa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="1DV449_cs222wa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Laboration 3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Mashup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="maps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="1DV449_cs222wa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="1DV449_cs222wa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Laboration 3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Mashup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="1DV449_cs222wa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="1DV449_cs222wa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Laboration 1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -197,50 +304,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="1DV449_cs222wa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="1DV449_cs222wa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Laboration 1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webskrapa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="1DV449_cs222wa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="1DV449_cs222wa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Laboration 1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webskrapa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -248,7 +311,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Laboration 1/webskrapa/View" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="options.lastSelected" value="reference.webide.settings.project.settings.php" />
     <property name="options.splitter.main.proportions" value="0.29833335" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -256,7 +319,11 @@
     <property name="FullScreen" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Carolina\Documents\GitHub\1DV449_cs222wa\Laboration 3\Mashup" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Carolina\Documents\GitHub\1DV449_cs222wa\Laboration 3\Mashup" />
       <recent name="C:\Users\Carolina\Documents\GitHub\1DV449_cs222wa\Laboration 1\webskrapa\View" />
       <recent name="C:\Users\Carolina\Documents\GitHub\1DV449_cs222wa\Laboration 1\webskrapa\Model" />
     </key>
@@ -324,31 +391,133 @@
       <option name="project" value="LOCAL" />
       <updated>1447353151975</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added base structure for Assignment 3">
+      <created>1450001836048</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1450001836048</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added Controller">
+      <created>1450002052298</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1450002052298</updated>
+    </task>
+    <task id="LOCAL-00007" summary="trouble shooting file_exists in Radio">
+      <created>1450003720832</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1450003720832</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Began adding Open Street Map to view">
+      <created>1450007331561</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1450007331561</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Map displays markers">
+      <created>1450017361381</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1450017361381</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Day, Date, Time, Title, Subcategory and Exact Location is displayed on marker.">
+      <created>1450027375196</created>
+      <option name="number" value="00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1450027375196</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Added short description of project idea to project folder.">
+      <created>1450086522360</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1450086522360</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Markerlist is presented, but with wrong content">
+      <created>1450103020719</created>
+      <option name="number" value="00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1450103020719</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Sorted list is displayed on page">
+      <created>1450114309090</created>
+      <option name="number" value="00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1450114309090</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Troubleshooting why markers aren't saved properly to array.&#10;Expected markers as saved object, but get two multidimensional arrays instead before object is reachable.">
+      <created>1450181568817</created>
+      <option name="number" value="00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1450181568817</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Troubleshooting 2 - Changed array to Object containing properties and key values. Object still divides into several arrays inside object.">
+      <created>1450186063930</created>
+      <option name="number" value="00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1450186063930</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Fixed issue with markers. Moving on to create category list">
+      <created>1450190552832</created>
+      <option name="number" value="00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1450190552832</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Created drop-down list">
+      <created>1450191687605</created>
+      <option name="number" value="00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1450191687605</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Markers on map adapts to category selection">
+      <created>1450202263605</created>
+      <option name="number" value="00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1450202263605</updated>
+    </task>
+    <task id="LOCAL-00019" summary="List and map are responsive to the category selection.">
+      <created>1450205073182</created>
+      <option name="number" value="00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1450205073182</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Fixed issue with selection problems in drop down. Application works.">
+      <created>1450211022988</created>
+      <option name="number" value="00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1450211022988</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Added Css.">
+      <created>1450216045379</created>
+      <option name="number" value="00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1450216045379</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1098" extended-state="7" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2593583" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2657754" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
@@ -374,7 +543,24 @@
     <MESSAGE value="View of URL form is displayed" />
     <MESSAGE value="Redid structure. MVC abundant." />
     <MESSAGE value="test sync" />
-    <option name="LAST_COMMIT_MESSAGE" value="test sync" />
+    <MESSAGE value="Added base structure for Assignment 3" />
+    <MESSAGE value="Added Controller" />
+    <MESSAGE value="trouble shooting file_exists in Radio" />
+    <MESSAGE value="Began adding Open Street Map to view" />
+    <MESSAGE value="Map displays markers" />
+    <MESSAGE value="Day, Date, Time, Title, Subcategory and Exact Location is displayed on marker." />
+    <MESSAGE value="Added short description of project idea to project folder." />
+    <MESSAGE value="Markerlist is presented, but with wrong content" />
+    <MESSAGE value="Sorted list is displayed on page" />
+    <MESSAGE value="Troubleshooting why markers aren't saved properly to array.&#10;Expected markers as saved object, but get two multidimensional arrays instead before object is reachable." />
+    <MESSAGE value="Troubleshooting 2 - Changed array to Object containing properties and key values. Object still divides into several arrays inside object." />
+    <MESSAGE value="Fixed issue with markers. Moving on to create category list" />
+    <MESSAGE value="Created drop-down list" />
+    <MESSAGE value="Markers on map adapts to category selection" />
+    <MESSAGE value="List and map are responsive to the category selection." />
+    <MESSAGE value="Fixed issue with selection problems in drop down. Application works." />
+    <MESSAGE value="Added Css." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Css." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -395,22 +581,101 @@
           <caret line="100" column="43" selection-start-line="100" selection-start-column="43" selection-end-line="100" selection-end-column="43" />
           <folding>
             <element signature="e#42#61#0#PHP" expanded="true" />
-            <marker date="1447798209218" expanded="true" signature="303:1116" placeholder="..." />
-            <marker date="1447798209218" expanded="true" signature="322:508" placeholder="..." />
-            <marker date="1447798209218" expanded="true" signature="527:1098" placeholder="..." />
-            <marker date="1447798209218" expanded="true" signature="565:670" placeholder="..." />
-            <marker date="1447798209218" expanded="true" signature="565:702" placeholder="..." />
-            <marker date="1447798209218" expanded="true" signature="565:1034" placeholder="..." />
-            <marker date="1447798209218" expanded="true" signature="565:1077" placeholder="..." />
-            <marker date="1447798209218" expanded="true" signature="877:948" placeholder="..." />
-            <marker date="1447798209218" expanded="true" signature="877:970" placeholder="..." />
-            <marker date="1447798209218" expanded="true" signature="981:1034" placeholder="..." />
-            <marker date="1447798209218" expanded="true" signature="981:1056" placeholder="..." />
-            <marker date="1447798209218" expanded="true" signature="982:1034" placeholder="..." />
-            <marker date="1447798209218" expanded="true" signature="1254:1543" placeholder="..." />
-            <marker date="1447798209218" expanded="true" signature="1277:1306" placeholder="..." />
-            <marker date="1447798209218" expanded="true" signature="1277:1365" placeholder="..." />
-            <marker date="1447798209218" expanded="true" signature="1277:1527" placeholder="..." />
+            <marker date="1447798209218" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1447798209218" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1447798209218" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1447798209218" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1447798209218" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1447798209218" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1447798209218" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1447798209218" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1447798209218" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Laboration 1/webskrapa/Model/Compiler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2312">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Laboration 1/webskrapa/Model/Scraper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1542" max-vertical-offset="2431">
+          <caret line="49" column="5" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Laboration 1/webskrapa/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="357">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Laboration 1/webskrapa/View/LayoutView.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="777" max-vertical-offset="2023">
+          <caret line="100" column="43" selection-start-line="100" selection-start-column="43" selection-end-line="100" selection-end-column="43" />
+          <folding>
+            <element signature="e#42#61#0#PHP" expanded="true" />
+            <marker date="1447798209218" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1447798209218" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1447798209218" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1447798209218" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1447798209218" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1447798209218" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1447798209218" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1447798209218" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1447798209218" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Laboration 1/webskrapa/Model/Compiler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2312">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Laboration 1/webskrapa/Model/Scraper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1542" max-vertical-offset="2431">
+          <caret line="49" column="5" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Laboration 1/webskrapa/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="357">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Laboration 1/webskrapa/View/LayoutView.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="777" max-vertical-offset="2023">
+          <caret line="100" column="43" selection-start-line="100" selection-start-column="43" selection-end-line="100" selection-end-column="43" />
+          <folding>
+            <element signature="e#42#61#0#PHP" expanded="true" />
+            <marker date="1447798209218" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1447798209218" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1447798209218" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1447798209218" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1447798209218" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1447798209218" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1447798209218" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1447798209218" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1447798209218" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -445,22 +710,15 @@
           <caret line="105" column="50" selection-start-line="105" selection-start-column="44" selection-end-line="105" selection-end-column="50" />
           <folding>
             <element signature="e#42#61#0#PHP" expanded="true" />
-            <marker date="1447798209218" expanded="true" signature="303:1116" placeholder="..." />
-            <marker date="1447798209218" expanded="true" signature="322:508" placeholder="..." />
-            <marker date="1447798209218" expanded="true" signature="527:1098" placeholder="..." />
-            <marker date="1447798209218" expanded="true" signature="565:670" placeholder="..." />
-            <marker date="1447798209218" expanded="true" signature="565:702" placeholder="..." />
-            <marker date="1447798209218" expanded="true" signature="565:1034" placeholder="..." />
-            <marker date="1447798209218" expanded="true" signature="565:1077" placeholder="..." />
-            <marker date="1447798209218" expanded="true" signature="877:948" placeholder="..." />
-            <marker date="1447798209218" expanded="true" signature="877:970" placeholder="..." />
-            <marker date="1447798209218" expanded="true" signature="981:1034" placeholder="..." />
-            <marker date="1447798209218" expanded="true" signature="981:1056" placeholder="..." />
-            <marker date="1447798209218" expanded="true" signature="982:1034" placeholder="..." />
-            <marker date="1447798209218" expanded="true" signature="1254:1543" placeholder="..." />
-            <marker date="1447798209218" expanded="true" signature="1277:1306" placeholder="..." />
-            <marker date="1447798209218" expanded="true" signature="1277:1365" placeholder="..." />
-            <marker date="1447798209218" expanded="true" signature="1277:1527" placeholder="..." />
+            <marker date="1447798209218" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1447798209218" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1447798209218" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1447798209218" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1447798209218" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1447798209218" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1447798209218" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1447798209218" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1447798209218" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -502,22 +760,15 @@
           <caret line="90" column="38" selection-start-line="90" selection-start-column="38" selection-end-line="90" selection-end-column="38" />
           <folding>
             <element signature="e#42#61#0#PHP" expanded="true" />
-            <marker date="1447798209218" expanded="true" signature="303:1116" placeholder="..." />
-            <marker date="1447798209218" expanded="true" signature="322:508" placeholder="..." />
-            <marker date="1447798209218" expanded="true" signature="527:1098" placeholder="..." />
-            <marker date="1447798209218" expanded="true" signature="565:670" placeholder="..." />
-            <marker date="1447798209218" expanded="true" signature="565:702" placeholder="..." />
-            <marker date="1447798209218" expanded="true" signature="565:1034" placeholder="..." />
-            <marker date="1447798209218" expanded="true" signature="565:1077" placeholder="..." />
-            <marker date="1447798209218" expanded="true" signature="877:948" placeholder="..." />
-            <marker date="1447798209218" expanded="true" signature="877:970" placeholder="..." />
-            <marker date="1447798209218" expanded="true" signature="981:1034" placeholder="..." />
-            <marker date="1447798209218" expanded="true" signature="981:1056" placeholder="..." />
-            <marker date="1447798209218" expanded="true" signature="982:1034" placeholder="..." />
-            <marker date="1447798209218" expanded="true" signature="1254:1543" placeholder="..." />
-            <marker date="1447798209218" expanded="true" signature="1277:1306" placeholder="..." />
-            <marker date="1447798209218" expanded="true" signature="1277:1365" placeholder="..." />
-            <marker date="1447798209218" expanded="true" signature="1277:1527" placeholder="..." />
+            <marker date="1447798209218" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1447798209218" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1447798209218" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1447798209218" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1447798209218" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1447798209218" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1447798209218" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1447798209218" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1447798209218" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -560,44 +811,109 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Laboration 1/webskrapa/View/LayoutView.php">
+    <entry file="file://$PROJECT_DIR$/Laboration 1/webskrapa/Model/Compiler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="777" max-vertical-offset="2023">
-          <caret line="100" column="43" selection-start-line="100" selection-start-column="43" selection-end-line="100" selection-end-column="43" />
-          <folding>
-            <element signature="e#42#61#0#PHP" expanded="true" />
-            <marker date="1447798209218" expanded="true" signature="303:1116" placeholder="..." />
-            <marker date="1447798209218" expanded="true" signature="322:508" placeholder="..." />
-            <marker date="1447798209218" expanded="true" signature="527:1098" placeholder="..." />
-            <marker date="1447798209218" expanded="true" signature="565:670" placeholder="..." />
-            <marker date="1447798209218" expanded="true" signature="565:702" placeholder="..." />
-            <marker date="1447798209218" expanded="true" signature="565:1034" placeholder="..." />
-            <marker date="1447798209218" expanded="true" signature="565:1077" placeholder="..." />
-            <marker date="1447798209218" expanded="true" signature="877:948" placeholder="..." />
-            <marker date="1447798209218" expanded="true" signature="877:970" placeholder="..." />
-            <marker date="1447798209218" expanded="true" signature="981:1034" placeholder="..." />
-            <marker date="1447798209218" expanded="true" signature="981:1056" placeholder="..." />
-            <marker date="1447798209218" expanded="true" signature="982:1034" placeholder="..." />
-            <marker date="1447798209218" expanded="true" signature="1254:1543" placeholder="..." />
-            <marker date="1447798209218" expanded="true" signature="1277:1306" placeholder="..." />
-            <marker date="1447798209218" expanded="true" signature="1277:1365" placeholder="..." />
-            <marker date="1447798209218" expanded="true" signature="1277:1527" placeholder="..." />
-          </folding>
+        <state vertical-scroll-proportion="0.25421822" vertical-offset="454" max-vertical-offset="2312">
+          <caret line="40" column="75" selection-start-line="40" selection-start-column="75" selection-end-line="40" selection-end-column="75" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Laboration 1/webskrapa/Model/Scraper.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1542" max-vertical-offset="2431">
+        <state vertical-scroll-proportion="-0.7975253" vertical-offset="1542" max-vertical-offset="2431">
           <caret line="49" column="5" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Laboration 1/webskrapa/Model/Compiler.php">
+    <entry file="file://$PROJECT_DIR$/Laboration 3/Mashup/Controller/Controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25421822" vertical-offset="454" max-vertical-offset="2312">
-          <caret line="40" column="75" selection-start-line="40" selection-start-column="75" selection-end-line="40" selection-end-column="75" />
+        <state vertical-scroll-proportion="0.21034871" vertical-offset="0" max-vertical-offset="889">
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Laboration 3/Mashup/response.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="102">
+          <caret line="0" column="9134" selection-start-line="0" selection-start-column="9134" selection-end-line="0" selection-end-column="9134" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Laboration 3/Mashup/maps/markers.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1564">
+          <caret line="0" column="11" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Laboration 3/Mashup/Model/Radio.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1721035" vertical-offset="0" max-vertical-offset="889">
+          <caret line="9" column="53" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Laboration 3/Mashup/maps/leaf-demo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1275" max-vertical-offset="2839">
+          <caret line="109" column="59" selection-start-line="109" selection-start-column="59" selection-end-line="109" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Laboration 1/webskrapa/View/LayoutView.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49718785" vertical-offset="0" max-vertical-offset="2023">
+          <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+          <folding>
+            <element signature="e#42#61#0#PHP" expanded="true" />
+            <marker date="1447798209218" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1447798209218" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1447798209218" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1447798209218" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1447798209218" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1447798209218" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1447798209218" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1447798209218" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1447798209218" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Laboration 3/Mashup/Index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="408">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Laboration 3/Mashup/View/HtmlView.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.346153" vertical-offset="0" max-vertical-offset="595">
+          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+          <folding>
+            <marker date="1450214705501" expanded="true" signature="100:1385" placeholder="..." />
+            <marker date="1450214705501" expanded="true" signature="123:799" placeholder="..." />
+            <marker date="1450214705501" expanded="true" signature="822:1365" placeholder="..." />
+            <marker date="1450214705501" expanded="true" signature="848:946" placeholder="..." />
+            <marker date="1450214705501" expanded="true" signature="985:1175" placeholder="..." />
+            <marker date="1450214705501" expanded="true" signature="1032:1070" placeholder="..." />
+            <marker date="1450214705501" expanded="true" signature="1117:1148" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Laboration 3/Mashup/css/mashupstyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.75846994" vertical-offset="309" max-vertical-offset="1666">
+          <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
           <folding />
         </state>
       </provider>
