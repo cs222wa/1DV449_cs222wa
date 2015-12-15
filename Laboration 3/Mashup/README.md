@@ -1,5 +1,7 @@
 ﻿# 1DV449_cs222wa
 
+* [Körbar version](http://cs222wa.node365.se/1dv449/mashup/Index.php)
+
 ##Reflektionsfrågor - Laboration 3
 ###Vad finns det för krav du måste anpassa dig efter i de olika API:erna?
 Gällande Open Street Map så ville de i stort sett bara att man skulle ge dem ett igenkännande genom att använda "© OpenStreetMap contributors" någonstans på sin sida.
