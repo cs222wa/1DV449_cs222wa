@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d8e1e09f-dc90-4722-acd9-719f45b7046b" name="Default" comment="Added base structure for Assignment 3">
+    <list default="true" id="d8e1e09f-dc90-4722-acd9-719f45b7046b" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Laboration 3/Mashup/View/HtmlView.php" afterPath="$PROJECT_DIR$/Laboration 3/Mashup/View/HtmlView.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Laboration 3/Mashup/response.json" afterPath="$PROJECT_DIR$/Laboration 3/Mashup/response.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -31,8 +32,8 @@
       <file leaf-file-name="Index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Laboration 3/Mashup/Index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="408">
-              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="408">
+              <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -41,36 +42,56 @@
       <file leaf-file-name="leaf-demo.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Laboration 3/Mashup/maps/leaf-demo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1275" max-vertical-offset="2839">
-              <caret line="109" column="59" selection-start-line="109" selection-start-column="59" selection-end-line="109" selection-end-column="59" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="2890">
+              <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HtmlView.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="response.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Laboration 3/Mashup/response.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="102">
+              <caret line="0" column="333" selection-start-line="0" selection-start-column="333" selection-end-line="0" selection-end-column="333" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Radio.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Laboration 3/Mashup/Model/Radio.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="816">
+              <caret line="8" column="84" selection-start-line="8" selection-start-column="84" selection-end-line="8" selection-end-column="84" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HtmlView.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Laboration 3/Mashup/View/HtmlView.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.346153" vertical-offset="0" max-vertical-offset="595">
-              <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+            <state vertical-scroll-proportion="0.24859393" vertical-offset="0" max-vertical-offset="889">
+              <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
               <folding>
-                <marker date="1450214705501" expanded="true" signature="100:1385" placeholder="..." />
-                <marker date="1450214705501" expanded="true" signature="123:799" placeholder="..." />
-                <marker date="1450214705501" expanded="true" signature="822:1365" placeholder="..." />
-                <marker date="1450214705501" expanded="true" signature="848:946" placeholder="..." />
-                <marker date="1450214705501" expanded="true" signature="985:1175" placeholder="..." />
-                <marker date="1450214705501" expanded="true" signature="1032:1070" placeholder="..." />
-                <marker date="1450214705501" expanded="true" signature="1117:1148" placeholder="..." />
+                <marker date="1450218755613" expanded="true" signature="100:1385" placeholder="..." />
+                <marker date="1450218755613" expanded="true" signature="123:508" placeholder="..." />
+                <marker date="1450218755613" expanded="true" signature="531:1365" placeholder="..." />
+                <marker date="1450218755613" expanded="true" signature="557:655" placeholder="..." />
+                <marker date="1450218755613" expanded="true" signature="694:884" placeholder="..." />
+                <marker date="1450218755613" expanded="true" signature="741:779" placeholder="..." />
+                <marker date="1450218755613" expanded="true" signature="826:857" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mashupstyle.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="mashupstyle.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Laboration 3/Mashup/css/mashupstyle.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.75846994" vertical-offset="309" max-vertical-offset="1666">
-              <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="564" max-vertical-offset="1666">
+              <caret line="69" column="11" selection-start-line="69" selection-start-column="11" selection-end-line="69" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -101,9 +122,9 @@
         <option value="$PROJECT_DIR$/Laboration 3 - kopia/Mashup/maps/leaf-demo.js" />
         <option value="$PROJECT_DIR$/Laboration 3/Mashup/Index.php" />
         <option value="$PROJECT_DIR$/Laboration 3/Mashup/Model/Radio.php" />
+        <option value="$PROJECT_DIR$/Laboration 3/Mashup/css/mashupstyle.css" />
         <option value="$PROJECT_DIR$/Laboration 3/Mashup/maps/leaf-demo.js" />
         <option value="$PROJECT_DIR$/Laboration 3/Mashup/View/HtmlView.php" />
-        <option value="$PROJECT_DIR$/Laboration 3/Mashup/css/mashupstyle.css" />
       </list>
     </option>
   </component>
@@ -493,12 +514,18 @@
       <option name="project" value="LOCAL" />
       <updated>1450216045379</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Added description to markers and list">
+      <created>1450216948483</created>
+      <option name="number" value="00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1450216948483</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1098" extended-state="7" />
-    <editor active="false" />
+    <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -512,7 +539,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2657754" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2657754" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -560,7 +587,8 @@
     <MESSAGE value="List and map are responsive to the category selection." />
     <MESSAGE value="Fixed issue with selection problems in drop down. Application works." />
     <MESSAGE value="Added Css." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Css." />
+    <MESSAGE value="Added description to markers and list" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added description to markers and list" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -835,34 +863,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Laboration 3/Mashup/response.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="102">
-          <caret line="0" column="9134" selection-start-line="0" selection-start-column="9134" selection-end-line="0" selection-end-column="9134" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Laboration 3/Mashup/maps/markers.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1564">
           <caret line="0" column="11" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Laboration 3/Mashup/Model/Radio.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1721035" vertical-offset="0" max-vertical-offset="889">
-          <caret line="9" column="53" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Laboration 3/Mashup/maps/leaf-demo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1275" max-vertical-offset="2839">
-          <caret line="109" column="59" selection-start-line="109" selection-start-column="59" selection-end-line="109" selection-end-column="59" />
           <folding />
         </state>
       </provider>
@@ -886,35 +890,59 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Laboration 3/Mashup/css/mashupstyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="564" max-vertical-offset="1666">
+          <caret line="69" column="11" selection-start-line="69" selection-start-column="11" selection-end-line="69" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Laboration 3/Mashup/maps/leaf-demo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="2890">
+          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Laboration 3/Mashup/Model/Radio.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="816">
+          <caret line="8" column="84" selection-start-line="8" selection-start-column="84" selection-end-line="8" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Laboration 3/Mashup/response.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="102">
+          <caret line="0" column="333" selection-start-line="0" selection-start-column="333" selection-end-line="0" selection-end-column="333" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Laboration 3/Mashup/Index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="408">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="408">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Laboration 3/Mashup/View/HtmlView.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.346153" vertical-offset="0" max-vertical-offset="595">
-          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.24859393" vertical-offset="0" max-vertical-offset="889">
+          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
           <folding>
-            <marker date="1450214705501" expanded="true" signature="100:1385" placeholder="..." />
-            <marker date="1450214705501" expanded="true" signature="123:799" placeholder="..." />
-            <marker date="1450214705501" expanded="true" signature="822:1365" placeholder="..." />
-            <marker date="1450214705501" expanded="true" signature="848:946" placeholder="..." />
-            <marker date="1450214705501" expanded="true" signature="985:1175" placeholder="..." />
-            <marker date="1450214705501" expanded="true" signature="1032:1070" placeholder="..." />
-            <marker date="1450214705501" expanded="true" signature="1117:1148" placeholder="..." />
+            <marker date="1450218755613" expanded="true" signature="100:1385" placeholder="..." />
+            <marker date="1450218755613" expanded="true" signature="123:508" placeholder="..." />
+            <marker date="1450218755613" expanded="true" signature="531:1365" placeholder="..." />
+            <marker date="1450218755613" expanded="true" signature="557:655" placeholder="..." />
+            <marker date="1450218755613" expanded="true" signature="694:884" placeholder="..." />
+            <marker date="1450218755613" expanded="true" signature="741:779" placeholder="..." />
+            <marker date="1450218755613" expanded="true" signature="826:857" placeholder="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Laboration 3/Mashup/css/mashupstyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.75846994" vertical-offset="309" max-vertical-offset="1666">
-          <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
