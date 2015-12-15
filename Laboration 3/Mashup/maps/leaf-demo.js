@@ -45,14 +45,14 @@ var TrafficMap = {
         for( var i=0; i < TrafficMap.messages.length; i++){
             if (TrafficMap.messages[i]["category"] == TrafficMap.categorySelection || TrafficMap.categorySelection == 4) {
                 TrafficMap.messages = TrafficMap.messages.sort(TrafficMap.sortByDate);
-                    TrafficMap.date = new Date(parseInt(TrafficMap.messages[i].createddate.substr(6)));
-                    var marker = L.marker([TrafficMap.messages[i].latitude, TrafficMap.messages[i].longitude], {icon: TrafficMap.myIcon})
-                        .bindPopup(TrafficMap.getDate() + TrafficMap.messages[i].title + ", " + TrafficMap.messages[i].subcategory + " " + TrafficMap.messages[i].exactlocation)
-                        .addTo(TrafficMap.map);
-                    TrafficMap.markers.push(marker);
+                TrafficMap.date = new Date(parseInt(TrafficMap.messages[i].createddate.substr(6)));
+                var marker = L.marker([TrafficMap.messages[i].latitude, TrafficMap.messages[i].longitude], {icon: TrafficMap.myIcon})
+                    .bindPopup(TrafficMap.getDate() + TrafficMap.messages[i].title + ", " + TrafficMap.messages[i].subcategory + " " + TrafficMap.messages[i].exactlocation)
+                    .addTo(TrafficMap.map);
+                TrafficMap.markers.push(marker);
             }
         }
-        TrafficMap.getList(TrafficMap.messages);
+        TrafficMap.getList( TrafficMap.messages);
     },
 
     getDate:function(){
@@ -71,9 +71,15 @@ var TrafficMap = {
     },
 
     getList:function(messageArray){
-        var listContainer = document.createElement("div");
-        listContainer.setAttribute("class", "markerList");
 
+        //remove listContainer element
+        var existingList = document.getElementById("List");
+        if(existingList){
+            existingList.parentNode.removeChild(existingList);
+        }
+        //create new div
+        var listContainer = document.createElement("div");
+        listContainer.setAttribute("id", "List");
         //create drop down list
         var button = document.createElement("button");
         button.setAttribute("value", "Välj kategori");
@@ -85,27 +91,27 @@ var TrafficMap = {
         select.options.add( new Option("Planerad störning","2") );
         select.options.add( new Option("Övrigt","3") );
         frag.appendChild(select);
-
         select.addEventListener("change", function(){
             TrafficMap.getCategory(select.value);
         });
-
         listContainer.appendChild(frag);
-
         //create list
         document.getElementsByTagName("body")[0].appendChild(listContainer);
         var listUl = document.createElement("ul");
         listContainer.appendChild(listUl);
         for( var i =  0 ; i < messageArray.length ; ++i){
-            var listMessage = document.createElement("li");
-            var listLink = document.createElement("a");
-            listLink.innerHTML = messageArray[i].title + ", " + messageArray[i].exactlocation;
-            listLink.setAttribute("href", "#");
-            listLink.setAttribute("value", messageArray[i].latitude + ", " + messageArray[i].longitude );
-            //listLink.setAttribute("data-id", messageArray[i].id);
-            listLink.addEventListener("click", function(){TrafficMap.activateMarker(this);});
-            listMessage.appendChild(listLink);
-            listUl.appendChild(listMessage);
+            if (messageArray[i]["category"] == TrafficMap.categorySelection || TrafficMap.categorySelection == 4) {
+                var listMessage = document.createElement("li");
+                var listLink = document.createElement("a");
+                listLink.innerHTML = messageArray[i].title + ", " + messageArray[i].exactlocation;
+                listLink.setAttribute("href", "#");
+                listLink.setAttribute("value", messageArray[i].latitude + ", " + messageArray[i].longitude);
+                listLink.addEventListener("click", function () {
+                    TrafficMap.activateMarker(this);
+                });
+                listMessage.appendChild(listLink);
+                listUl.appendChild(listMessage);
+            }
         }
     },
 
@@ -157,7 +163,6 @@ var TrafficMap = {
             if(TrafficMap.markers[i].getLatLng()['lat']== lat && TrafficMap.markers[i].getLatLng()['lng']== lng){
                 TrafficMap.markers[i].openPopup();
             }
-
         }
     }
 };
