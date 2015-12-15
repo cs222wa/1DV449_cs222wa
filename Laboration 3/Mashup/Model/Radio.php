@@ -7,7 +7,7 @@ class Radio
         $traffic = null;
         //If file is older than 15 min - create a new request
         if(file_exists(self::$fileName) && time() - filemtime(self::$fileName) > 60 * 1){
-            echo("New traffic information has been fetched.");
+            echo("Ny trafik information har hämtats.");
             //fetch new traffic information
             $traffic = $this->fetchCurlPage();
             //if the fetched information is not empty/null
@@ -20,11 +20,11 @@ class Radio
             else{
                 //if trafficinformation is empty return time of latest json response
                 $fileTime = date("j M Y H:i:s", filemtime(self::$fileName));
-                return "Trafffic information from Sveriges Radio is currently unavailable. Latest version: {$fileTime}";
+                return "Information från Sveriges Radio är för tillfället ej tillgängligt. Senaste version: {$fileTime}";
             }
         }
         else{
-            echo "cache is used";
+            echo "Cache används";
         }
         return false;
     }

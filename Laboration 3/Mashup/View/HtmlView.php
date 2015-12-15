@@ -9,11 +9,11 @@ class HtmlView
                     <link rel="stylesheet" type="text/css" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
                     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> <!--JQuery Library-->
                     <script type="text/javascript" src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js?2"></script> <!--Leaflet CSS-->
-                    <title>Mashup Application</title>
+                    <title>Traffik Mashup Applikation</title>
                 </head>
                 <body>
                     <div>
-                        <h1>Traffic Information</h1>
+                        <h1>Trafik Information</h1>
                     </div>
                     <div id="content">
                         <div id="map" style="height: 440px; border: 1px solid #AAA;"></div>

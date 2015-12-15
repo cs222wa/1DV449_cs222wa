@@ -37,22 +37,26 @@ var TrafficMap = {
     },
 
     getMarkers: function (){
+        for( var i=0; i < TrafficMap.markers.length; i++){
+            TrafficMap.map.removeLayer(TrafficMap.markers[i]);
+        }
+        TrafficMap.markers = [];
         TrafficMap.messages = TrafficMap.json["messages"];
-
-        TrafficMap.messages = TrafficMap.messages.sort(TrafficMap.sortByDate);
-        for ( var i=0; i < TrafficMap.messages.length; ++i )
-        {
-            TrafficMap.date = new Date(parseInt(TrafficMap.messages[i].createddate.substr(6)));
-            var marker = L.marker( [TrafficMap.messages[i].latitude, TrafficMap.messages[i].longitude] , {icon: TrafficMap.myIcon} )
-                .bindPopup( TrafficMap.getDate() + TrafficMap.messages[i].title + ", " + TrafficMap.messages[i].subcategory + " " + TrafficMap.messages[i].exactlocation )
-                .addTo( TrafficMap.map );
-            TrafficMap.markers.push(marker);
+        for( var i=0; i < TrafficMap.messages.length; i++){
+            if (TrafficMap.messages[i]["category"] == TrafficMap.categorySelection || TrafficMap.categorySelection == 4) {
+                TrafficMap.messages = TrafficMap.messages.sort(TrafficMap.sortByDate);
+                    TrafficMap.date = new Date(parseInt(TrafficMap.messages[i].createddate.substr(6)));
+                    var marker = L.marker([TrafficMap.messages[i].latitude, TrafficMap.messages[i].longitude], {icon: TrafficMap.myIcon})
+                        .bindPopup(TrafficMap.getDate() + TrafficMap.messages[i].title + ", " + TrafficMap.messages[i].subcategory + " " + TrafficMap.messages[i].exactlocation)
+                        .addTo(TrafficMap.map);
+                    TrafficMap.markers.push(marker);
+            }
         }
         TrafficMap.getList(TrafficMap.messages);
     },
 
     getDate:function(){
-        var days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+        var days = ['Söndag','Måndag','Tisdag','Onsdag','Torsdag','Fredag','Lördag'];
         Date.prototype.getDayName = function() {
             return days[ TrafficMap.date.getDay() ];
         };
@@ -81,6 +85,11 @@ var TrafficMap = {
         select.options.add( new Option("Planerad störning","2") );
         select.options.add( new Option("Övrigt","3") );
         frag.appendChild(select);
+
+        select.addEventListener("change", function(){
+            TrafficMap.getCategory(select.value);
+        });
+
         listContainer.appendChild(frag);
 
         //create list
@@ -98,9 +107,37 @@ var TrafficMap = {
             listMessage.appendChild(listLink);
             listUl.appendChild(listMessage);
         }
-        //add onclick event on the category links
-        //when clicked, list the category clicked first and then add remaining categories
     },
+
+    getCategory: function(value){
+        switch(value) {
+            case "0":
+                TrafficMap.categorySelection = 0;
+                console.log("cat 0");
+                TrafficMap.getMarkers();
+                break;
+            case "1":
+                TrafficMap.categorySelection = 1;
+                console.log("cat 1");
+                TrafficMap.getMarkers();
+                break;
+            case "2":
+                TrafficMap.categorySelection = 2;
+                console.log("cat 2");
+                TrafficMap.getMarkers();
+                break;
+            case "3":
+                TrafficMap.categorySelection = 3;
+                console.log("cat 3");
+                TrafficMap.getMarkers();
+                break;
+            default:
+                TrafficMap.categorySelection = 4;
+                console.log("cat 4");
+                TrafficMap.getMarkers();
+        }
+    },
+
 
     sortByDate: function(a,b) {
         if (a['createddate'] < b['createddate'])
