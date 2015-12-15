@@ -3,7 +3,7 @@ var TrafficMap = {
     messages: undefined,
     date: undefined,
     json: undefined,
-    markers : [],
+    markers : {},
     url: "response.json",
     init:function(){
         var map = L.map( 'map', {
@@ -37,9 +37,7 @@ var TrafficMap = {
                     var marker = L.marker( [TrafficMap.messages[i].latitude, TrafficMap.messages[i].longitude], {icon: myIcon} )
                         .bindPopup( TrafficMap.getDate() + TrafficMap.messages[i].title + ", " + TrafficMap.messages[i].subcategory + " " + TrafficMap.messages[i].exactlocation )
                         .addTo( map );
-                    TrafficMap.markers[TrafficMap.messages[i].id] = marker;
-                    //TrafficMap.markers.push(TrafficMap.messages[i].id, marker);
-                    //console.log(TrafficMap.markers);
+                    TrafficMap.markers[TrafficMap.messages[i]["id"]] = marker;
                 }
                 TrafficMap.getList(TrafficMap.messages);
             }
@@ -98,11 +96,16 @@ var TrafficMap = {
     activateMarker:function(identifier){
 
         var dataId = identifier.getAttribute("data-id");
+        //TrafficMap.messages[dataId].openPopup();
+
+        console.log(TrafficMap.messages);
+        console.log(dataId);
+
 
         //getPopup
         //get popup properties
 
-        console.log(TrafficMap.markers);
+        //console.log(TrafficMap.markers);
 
 
         //console.log(identifier.getAttribute("data-id"));
