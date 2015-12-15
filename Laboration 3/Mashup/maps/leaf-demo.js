@@ -46,7 +46,7 @@ var TrafficMap = {
                 TrafficMap.messages = TrafficMap.messages.sort(TrafficMap.sortByDate);
                 TrafficMap.date = new Date(parseInt(TrafficMap.messages[i].createddate.substr(6)));
                 var marker = L.marker([TrafficMap.messages[i].latitude, TrafficMap.messages[i].longitude], {icon: TrafficMap.myIcon})
-                    .bindPopup(TrafficMap.getDate() + TrafficMap.messages[i].title + ", " + TrafficMap.messages[i].subcategory + " " + TrafficMap.messages[i].exactlocation)
+                    .bindPopup(TrafficMap.getDate() + TrafficMap.messages[i].title + ", " + TrafficMap.messages[i].subcategory + " " + TrafficMap.messages[i].exactlocation + " " + TrafficMap.messages[i].description)
                     .addTo(TrafficMap.map);
                 TrafficMap.markers.push(marker);
             }
@@ -110,6 +110,9 @@ var TrafficMap = {
                 var listText = document.createElement("p");
                 listText.innerHTML = messageArray[i].title + " " + messageArray[i].exactlocation;
                 listDiv.appendChild(listText);
+                var listDescription = document.createElement("p");
+                listDescription.innerHTML = messageArray[i].description;
+                listDiv.appendChild(listDescription);
                 listMessage.appendChild(listDiv);
                 listUl.appendChild(listMessage);
             }
