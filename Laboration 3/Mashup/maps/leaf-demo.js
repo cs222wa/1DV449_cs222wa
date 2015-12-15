@@ -5,6 +5,7 @@ var TrafficMap = {
     date: undefined,
     json: undefined,
     markers : [],
+    categorySelection: 4,
     url: "response.json",
     init:function(){
         TrafficMap.map = L.map( 'map', {
@@ -66,12 +67,23 @@ var TrafficMap = {
     },
 
     getList:function(messageArray){
-
         var listContainer = document.createElement("div");
         listContainer.setAttribute("class", "markerList");
 
         //create drop down list
+        var button = document.createElement("button");
+        button.setAttribute("value", "Välj kategori");
+        var frag = document.createDocumentFragment();
+        var select = document.createElement("select");
+        select.options.add( new Option("Alla Kategorier","4", true, true));
+        select.options.add( new Option("Vägtrafik","0") );
+        select.options.add( new Option("Kollektivtrafik","1") );
+        select.options.add( new Option("Planerad störning","2") );
+        select.options.add( new Option("Övrigt","3") );
+        frag.appendChild(select);
+        listContainer.appendChild(frag);
 
+        //create list
         document.getElementsByTagName("body")[0].appendChild(listContainer);
         var listUl = document.createElement("ul");
         listContainer.appendChild(listUl);
@@ -86,7 +98,6 @@ var TrafficMap = {
             listMessage.appendChild(listLink);
             listUl.appendChild(listMessage);
         }
-        //fix category-links (drop down?)
         //add onclick event on the category links
         //when clicked, list the category clicked first and then add remaining categories
     },
