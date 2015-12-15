@@ -2,9 +2,9 @@
 
 ##Reflektionsfrågor - Laboration 3
 ###Vad finns det för krav du måste anpassa dig efter i de olika API:erna?
-Open Street Map - ge igenkännande genom att använda "© OpenStreetMap contributors" på sidan.
-Hålla nere antal http requests.
-"Materialet som tillhandahålls via API får inte användas på ett sådant sätt att det skulle kunna skada Sveriges Radios oberoende eller trovärdighet."
+Gällande Open Street Map så ville de i stort sett bara att man skulle ge dem ett igenkännande genom att använda "© OpenStreetMap contributors" någonstans på sin sida.
+Man bör hålla nere antal http requests, enligt mig även om det inte står som ett uttryckligt krav, just för att visa respekt och allmän hänsyn.
+Sveriges Radio hade ett krav om att "Materialet som tillhandahålls via API får inte användas på ett sådant sätt att det skulle kunna skada Sveriges Radios oberoende eller trovärdighet."
 
 ###Hur och hur länga cachar du ditt data för att slippa anropa API:erna i onödan?
 Under arbetet uppdaterade jag var 15'e minut för att  hålla nere antalet anrop, men ändrade det till 1 minut när jag lade upp sidan på servern för att hålla informationen så aktuell som möjligt. Information från SR lagras i en js-fil som ett json objekt och jag har en if-sats som kontrollerar om filen redan existerar samt använder sig av filemtime()  för ta redan på hur lång tid som i så fall gått sedan filen skapades, då ny information försöks hämtas ner.
