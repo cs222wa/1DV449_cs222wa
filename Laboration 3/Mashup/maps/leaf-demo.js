@@ -5,7 +5,7 @@ var TrafficMap = {
     date: undefined,
     json: undefined,
     markers : [],
-    categorySelection: 4,
+    categorySelection: "4",
     url: "response.json",
     init:function(){
         TrafficMap.map = L.map( 'map', {
@@ -33,10 +33,10 @@ var TrafficMap = {
         };
         xhr.open("GET", TrafficMap.url, false);
         xhr.send(null);
-        TrafficMap.getMarkers();
+        TrafficMap.getMarkers(TrafficMap.categorySelection);
     },
 
-    getMarkers: function (){
+    getMarkers: function (value){
         for( var i=0; i < TrafficMap.markers.length; i++){
             TrafficMap.map.removeLayer(TrafficMap.markers[i]);
         }
@@ -52,7 +52,7 @@ var TrafficMap = {
                 TrafficMap.markers.push(marker);
             }
         }
-        TrafficMap.getList( TrafficMap.messages);
+        TrafficMap.getList(TrafficMap.messages, value);
     },
 
     getDate:function(){
@@ -70,7 +70,7 @@ var TrafficMap = {
         return day + " " + yyyy + '-' + (mm[1]?mm:"0"+mm[0]) + '-' + (dd[1]?dd:"0"+dd[0]) + " " + hh + ':' + mn+ " ";
     },
 
-    getList:function(messageArray){
+    getList:function(messageArray, value){
 
         //remove listContainer element
         var existingList = document.getElementById("List");
@@ -85,13 +85,15 @@ var TrafficMap = {
         button.setAttribute("value", "Välj kategori");
         var frag = document.createDocumentFragment();
         var select = document.createElement("select");
-        select.options.add( new Option("Alla Kategorier","4", true, true));
-        select.options.add( new Option("Vägtrafik","0") );
-        select.options.add( new Option("Kollektivtrafik","1") );
-        select.options.add( new Option("Planerad störning","2") );
-        select.options.add( new Option("Övrigt","3") );
+        select.options.add( new Option("Alla Kategorier","4", value == "4", value == "4"));
+        select.options.add( new Option("Vägtrafik","0", value == "0", value == "0"));
+        select.options.add( new Option("Kollektivtrafik","1", value == "1", value == "1"));
+        select.options.add( new Option("Planerad störning","2", value == "2", value == "2"));
+        select.options.add( new Option("Övrigt","3", value == "3", value == "3"));
         frag.appendChild(select);
         select.addEventListener("change", function(){
+            //this.option[value].prop("selected", true);
+           //select.attr('selected', true);
             TrafficMap.getCategory(select.value);
         });
         listContainer.appendChild(frag);
@@ -120,27 +122,27 @@ var TrafficMap = {
             case "0":
                 TrafficMap.categorySelection = 0;
                 console.log("cat 0");
-                TrafficMap.getMarkers();
+                TrafficMap.getMarkers(value);
                 break;
             case "1":
                 TrafficMap.categorySelection = 1;
                 console.log("cat 1");
-                TrafficMap.getMarkers();
+                TrafficMap.getMarkers(value);
                 break;
             case "2":
                 TrafficMap.categorySelection = 2;
                 console.log("cat 2");
-                TrafficMap.getMarkers();
+                TrafficMap.getMarkers(value);
                 break;
             case "3":
                 TrafficMap.categorySelection = 3;
                 console.log("cat 3");
-                TrafficMap.getMarkers();
+                TrafficMap.getMarkers(value);
                 break;
             default:
                 TrafficMap.categorySelection = 4;
                 console.log("cat 4");
-                TrafficMap.getMarkers();
+                TrafficMap.getMarkers(value);
         }
     },
 

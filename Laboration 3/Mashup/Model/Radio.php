@@ -5,7 +5,7 @@ class Radio
     private $cache;
     public function getInfo(){
         $traffic = null;
-        //If file is older than 15 min - create a new request
+        //If file is too old - create a new request
         if(file_exists(self::$fileName) && time() - filemtime(self::$fileName) > 60 * 1){
             echo("Ny trafik information har hämtats.");
             //fetch new traffic information
