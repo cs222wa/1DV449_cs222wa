@@ -9,7 +9,7 @@ Man bör hålla nere antal http requests, enligt mig även om det inte står som
 Sveriges Radio hade ett krav om att "Materialet som tillhandahålls via API får inte användas på ett sådant sätt att det skulle kunna skada Sveriges Radios oberoende eller trovärdighet."
 
 ###Hur och hur länga cachar du ditt data för att slippa anropa API:erna i onödan?
-Under arbetet uppdaterade jag var 15'e minut för att  hålla nere antalet anrop, men ändrade det till 1 minut när jag lade upp sidan på servern för att hålla informationen så aktuell som möjligt. Information från SR lagras i en js-fil som ett json objekt och jag har en if-sats som kontrollerar om filen redan existerar samt använder sig av filemtime()  för ta redan på hur lång tid som i så fall gått sedan filen skapades, då ny information försöks hämtas ner.
+Under arbetet uppdaterade jag var 15'e minut för att  hålla nere antalet anrop, men ändrade det till 1 minut när jag lade upp sidan på servern för att hålla informationen så aktuell som möjligt. Information från SR lagras i en js-fil och jag har en if-sats som kontrollerar om filen redan existerar samt använder sig av filemtime()  för ta redan på hur lång tid som i så fall gått sedan filen skapades, då ny information försöks hämtas ner.
 
 ###Vad finns det för risker kring säkerhet och stabilitet i din applikation?
 Det finns inga input fält för fritext i applikationen, vilket minimerar säkerhetsriskerna mycket då input är begränsat till förvalda värden.
