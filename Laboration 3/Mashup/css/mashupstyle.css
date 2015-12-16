@@ -33,26 +33,33 @@ select{
 
 #map{
     margin-top: 70px;
-    width: 1225px;
+    max-width: 1250px;
+    min-width: 150px;
+    width: 65%;
     float: right;
     margin-right: 40px;
 }
 
 
 .listDiv{
-    width: 500px;
+    max-width: 500px;
+    min-width: 150px;
+    width: 99%;
     background-color: white;
     border: 1px solid lightgray;
 }
 
 #List{
-    width: 600px;
+    width: 30%;
+    min-width: 150px;
     margin: 0;
     display: inline-block;
 }
 
 ul{
-    width: 550px;
+    max-width: 500px;
+    min-width: 150px;
+    width: 99%;
     margin: 0;
     display: inline-block;
     max-height: 70%;
